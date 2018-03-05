@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'baltoBold';
+  src: font-url('bb.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("bb.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'harrietbold';
+  src: font-url('hb.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("hb.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hli';
+  src: font-url('hli.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("hli.otf") format("opentype");
+}
