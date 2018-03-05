@@ -6,6 +6,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'baltoBook';
+  src: font-url('bbook.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("bbook.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
   font-family: 'harrietbold';
   src: font-url('hb.otf'); /* IE9 Compat Modes */
   src: local("☺"),

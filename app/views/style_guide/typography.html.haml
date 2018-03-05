@@ -60,8 +60,9 @@
           Size, large screen
         30px
     .sample
-      %h2.regular-article-headline How federal tax reform will raise state income taxes
-
+      %p.eyebrow
+        =link_to 'TECHNOLOGY', '#', :class => "author-name"
+        %span.author-name | Today 8:12 A.M.
 
   %h3 Main Headline
   %section.specs
@@ -85,6 +86,28 @@
     .sample
       %h2.regular-article-headline How federal tax reform will raise state income taxes
 
+  %h3 Dek/Sub-headline
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        Semibold
+      %li
+        %span
+          Color
+        \#333333
+      %li
+        %span
+          Size, large screen
+        30px
+
+    .sample
+      %p.dek Millions will choose the standard deduction over itemizing, but states have not raised their standard deductions
   %h3 Byline
   %section.specs
     %ul.specs-list.column-left
@@ -106,41 +129,13 @@
         30px
 
     .sample
-      %p By Joan Sibelius, Today 2:17pm
-
-
-  %h3 Right Rail Headlines
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
-      %li
-        %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
-
-    .sample
-      %ul.rr-headline-list
-        %li
-          %h2 7 home staging mistakes only rookies make
-        %li
-          %h2 7 home staging mistakes only rookies make
-        %li
-          %h2 7 home staging mistakes only rookies make
-        %li
-          %h2 7 home staging mistakes only rookies make
-        %li
-          %h2 7 home staging mistakes only rookies make
+      %p.byline
+        %span.author-name BY
+        =link_to 'Emma Hinchliffe', '#', :class => "author-name"
+        |
+        =link_to '@emmah', '#'
+        |
+        =link_to 'emmah@inman.com', '#'
 
   %h3 body copy
   %section.specs
@@ -196,6 +191,40 @@
 
   %h2 Video
   %section.specs
+
+  %h3 Right Rail Headlines
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        Semibold
+      %li
+        %span
+          Color
+        \#333333
+      %li
+        %span
+          Size, large screen
+        30px
+
+    .sample
+      %ul.rr-headline-list
+        %li
+          %h2 7 home staging mistakes only rookies make
+        %li
+          %h2 7 home staging mistakes only rookies make
+        %li
+          %h2 7 home staging mistakes only rookies make
+        %li
+          %h2 7 home staging mistakes only rookies make
+        %li
+          %h2 7 home staging mistakes only rookies make
+
 
   %h2 Guides Circulation
   %section.specs

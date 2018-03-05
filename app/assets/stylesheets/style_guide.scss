@@ -8,6 +8,7 @@ body {
 }
 a {
   color:#2d92d0;
+  text-decoration: none;
 }
 
 body[data-controller="style_guide"][data-action="typography"] {
@@ -119,6 +120,21 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-family: 'harrietbold';
     font-size: 36px;
     line-height: 1;
-    color:#222;
+    color:#374145;
+  }
+  .eyebrow, .byline {
+    font-family: "BaltoBook";
+    color:#999;
+    .author-name {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size:13px;
+    }
+  }
+  .dek {
+    font-family: 'baltoBook';
+    font-size: 20px;
+    line-height: 1.4;
+    color: #444;
   }
 }
