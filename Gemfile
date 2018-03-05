@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml-rails", "~> 1.0"
+
+ruby "2.4.1"
