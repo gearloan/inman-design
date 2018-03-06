@@ -5,13 +5,18 @@ body {
   font-family: sans-serif;
   font-size: 14px;
   line-height:1.6;
+  overflow-x: hidden;
 }
 a {
   color:#2d92d0;
   text-decoration: none;
 }
-
+p {
+  margin: 0 0 1em 0;
+}
 body[data-controller="style_guide"][data-action="typography"] {
+    padding-bottom: 100vh;
+    padding-top: 90px;
    .content {
     display: flex;
     x-justify-content: space-around;
@@ -42,10 +47,12 @@ body[data-controller="style_guide"][data-action="typography"] {
           padding: 10px;
         }
         ul.type-instances {
+          padding: 0 0 0 6px;
+          a { opacity: .7;}
           li {
             color:#777;
             ul.type-group {
-              padding: 0 0 0 15px;
+              padding: 0 0 0 8px;
               li {
                 color:#aaa;
                 font-size: 12px;
@@ -59,11 +66,14 @@ body[data-controller="style_guide"][data-action="typography"] {
 
   h1 {
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin: .5em 0 .25rem 0;
   }
 
   h2 {
     margin-bottom: .5rem;
+    clear: both;
+    text-transform: capitalize;
+    opacity: .7;
   }
 
   h3 {
@@ -72,7 +82,6 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    clear: both;
   }
 
   h4 {
@@ -80,14 +89,15 @@ body[data-controller="style_guide"][data-action="typography"] {
   }
   .sample {
     background:#ffffff;
-    padding:15px 30px;
+    padding:15px;
     color:#222;
     min-width: 420px;
   }
   .design-logo-main {
-    padding: 10px;
     opacity: .4;
-    float: right;
+    position: absolute;
+    right: 45px;
+    top:45px;
     margin-bottom: .5rem;
   }
   section.specs {
@@ -136,5 +146,66 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 20px;
     line-height: 1.4;
     color: #444;
+  }
+  .section-wrap {
+    padding-left: 15px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 2em;
+  }
+  .intro-container {
+    display: flex;
+    align-items:flex-start;
+    margin-bottom: 1em;
+    .scale, .alphabet {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 0 30px;
+    }
+    .alphabet {
+      margin-right: 30px;
+      p {
+        font-size: 24px;
+        margin: 0;
+        line-height: 1.2;
+        letter-spacing: 1px;
+      }
+    }
+    .scale {
+      span {
+        &:nth-of-type(1) {
+          font-size:14px;
+        }
+        &:nth-of-type(2) {
+          font-size:18px;
+        }
+        &:nth-of-type(3) {
+          font-size:24px;
+        }
+        &:nth-of-type(4) {
+          font-size:30px;
+        }
+        &:nth-of-type(5) {
+          font-size:36px;
+        }
+      }
+    }
+    .balto-sample {
+      font-family: "baltoBook";
+    }
+    .harriet-sample {
+      font-family: "harrietBold";
+    }
+    .balto-sample, .harriet-sample {
+      margin: 0 60px 0 0;
+    }
+    .welcome-text {
+      width:320px;
+      font-size: 12px;
+      padding-right: 90px;
+    }
+    img {
+      position: relative;
+      top: -12px;
+    }
   }
 }
