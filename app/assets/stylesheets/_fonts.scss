@@ -20,6 +20,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'harrietRegular';
+  src: font-url('hr.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("hr.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
   font-family: 'hli';
   src: font-url('hli.otf'); /* IE9 Compat Modes */
   src: local("☺"),

@@ -118,9 +118,9 @@
           Size, large screen
         30px
     .sample
-      %p.sharing
-        email
-        =link_to 'twitter', '#', :class => "author-name"
+      %p.sharing-top
+        =link_to 'Email, ', '#'
+        =link_to 'Save for later', '#'
 
   %h3#image-credit Image Credit
   %section.specs
@@ -143,7 +143,7 @@
         30px
     .sample
       %p.image-credit
-        illustration by
+        Illustration by
         =link_to 'Pedro Correa', '#', :class => "author-name"
 
   %h2 Interior
@@ -196,7 +196,16 @@
 
     .sample
       %p.body-copy
-        There’s an unpleasant surprise awaiting homeowners who plan to use the standard deduction rather than itemize on their federal income tax next year. They could easily find themselves paying more in state income taxes in 2018 than 2017 because of the tax reform act.
+        There’s an
+        =link_to "unpleasant surprise", "#"
+        awaiting homeowners who plan to use the
+        =link_to "standard deduction", "#"
+        rather than itemize on their
+        =link_to "federal income tax", "#"
+        next year. They could easily find themselves paying more in
+        =link_to "state income taxes", "#"
+        in 2018 than 2017 because of the
+        =link_to "tax reform act.", "#"
 
   %h3#block-quote block quote
   %section.specs
@@ -219,8 +228,10 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
+      %p.body-copy Rosemont, Illinois-based VHT Studios, a 20-year-old provider of professional real estate photography, virtual staging and visual marketing services, announced today its acquisition of Circlepix's real estate photography business, a deal that brings together the country's two largest real estate photographer networks in North America.
+      %p.block-quote The Circlepix photography business acquisition, which does not include its PIXmarketing and PIXsocial divisions, is the second photography business acquisition in the past two years for VHT Studios, after it snatched up New York’s Gotham Photo Company in 2015.
+      %p.body-copy Around 300 Circlepix photographers around the country will join VHT Studios, raising the company's photographer count to approximately 900, and VHT Studios will inherit roughly 13,000 new clients in the deal, VHT Studios CEO Brian Balduf told Inman. Terms of the deal were not disclosed.
+
 
   %h3#pull-quote pull quote
   %section.specs
@@ -243,8 +254,7 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
+      %p.pull-quote A deal that brings together the country's two largest real estate photographer networks
 
   %h3#numbered-lists numered lists
   %section.specs
@@ -267,8 +277,12 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
+      %ol.numbered-list
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
 
   %h3#bulleted-lists bulleted lists
   %section.specs
@@ -291,9 +305,12 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
-
+      %ul.bullet-list
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
 
   %h3#video video
   %section.specs
@@ -316,8 +333,7 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
+      %p.block-quote TBD
 
   %h3#sharing-module sharing module
   %section.specs
@@ -340,8 +356,6 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
 
   %h3#comments comments
   %section.specs
@@ -364,5 +378,3 @@
         30px
 
     .sample
-      %p.block-quote
-        Thus, homeowners in the other 43 states who take the big federal standard deduction are stuck with the lower state standard deduction and cannot itemize at the state level.
