@@ -6,19 +6,23 @@
       %li
         %span
           Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
+        Balto Book
       %li
         %span
           Color
-        \#333333
+        \#999999
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        12px
+      %li
+        %span
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1px
     .sample
       %p.eyebrow
         =link_to 'TECHNOLOGY', '#', :class => "author-name"
@@ -34,15 +38,19 @@
       %li
         %span
           Weight
-        Semibold
+        bold
       %li
         %span
           Color
-        \#333333
+        \#374145
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        36px
+      %li
+        %span
+          line-height
+        1
     .sample
       %h2.regular-article-headline How federal tax reform will raise state income taxes
 
@@ -52,19 +60,23 @@
       %li
         %span
           Family
-        Harriet
+        Balto
       %li
         %span
           Weight
-        Semibold
+        Book
       %li
         %span
           Color
-        \#333333
+        \#444444
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        20px
+      %li
+        %span
+          Line Height
+        1.4
 
     .sample
       %p.dek Millions will choose the standard deduction over itemizing, but states have not raised their standard deductions
@@ -75,19 +87,23 @@
       %li
         %span
           Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
+        Balto Book
       %li
         %span
           Color
-        \#333333
+        \#999999
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        12px
+      %li
+        %span
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1px
 
     .sample
       %p.byline
@@ -104,19 +120,15 @@
       %li
         %span
           Family
-        Harriet
+        Balto
       %li
         %span
           Weight
-        Semibold
+        Bold
       %li
         %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
+          Size
+        18px
     .sample
       %p.sharing-top
         =link_to 'Email, ', '#'
@@ -128,19 +140,19 @@
       %li
         %span
           Family
-        Harriet
+        Balto
       %li
         %span
           Weight
-        Semibold
+        Book
       %li
         %span
           Color
-        \#333333
+        \#999999
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        12px
     .sample
       %p.image-credit
         Illustration by
@@ -154,19 +166,19 @@
       %li
         %span
           Family
-        Harriet
+        System Stack
       %li
         %span
           Weight
-        Semibold
+        book
       %li
         %span
           Color
-        \#333333
+        \#555555
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        14px
 
     .sample
       %p.body-copy
@@ -188,32 +200,53 @@
       %li
         %span
           Color
-        \#333333
+        \#2d92d0
       %li
         %span
-          Size, large screen
-        30px
+          On Hover
+        Underline
+      %li
+        %span
+          Visited
+        \#2f719a
 
     .sample
       %p.body-copy
         There’s an
-        =link_to "unpleasant surprise", "#"
+        =link_to "unpleasant surprise", "#", :class => "inline-link"
         awaiting homeowners who plan to use the
-        =link_to "standard deduction", "#"
+        =link_to "standard deduction", "#", :class => "inline-link"
         rather than itemize on their
-        =link_to "federal income tax", "#"
+        =link_to "federal income tax", "#", :class => "inline-link"
         next year. They could easily find themselves paying more in
-        =link_to "state income taxes", "#"
+        =link_to "state income taxes", "#", :class => "inline-link"
         in 2018 than 2017 because of the
-        =link_to "tax reform act.", "#"
+        =link_to "tax reform act.", "#", :class => "inline-link"
 
+  %h3#highlighted-text highlighted text
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Background
+        \#5cb2e1
+      %li
+        %span
+          Color
+        \#FFFFFF
+
+    .sample
+      %p.body-copy
+        Rosemont, Illinois-based VHT Studios, a 20-year-old provider of professional
+        %span.highlighted-text real estate photography, virtual staging and visual marketing services,
+        announced today its acquisition of Circlepix's real estate photography business, a deal that brings together the country's two...
   %h3#block-quote block quote
   %section.specs
     %ul.specs-list.column-left
       %li
         %span
-          Family
-        Harriet
+          Padding
+        0 2rem
       %li
         %span
           Weight
@@ -243,16 +276,23 @@
       %li
         %span
           Weight
-        Semibold
+        Regular
       %li
         %span
           Color
-        \#333333
+        \#00aae8
       %li
         %span
-          Size, large screen
-        30px
-
+          Size
+        24px
+      %li
+        %span
+          Width
+        280px
+      %li
+        %span
+          Line Height
+        1.2
     .sample
       %p.pull-quote A deal that brings together the country's two largest real estate photographer networks
 
@@ -262,27 +302,32 @@
       %li
         %span
           Family
-        Harriet
+        Balto
       %li
         %span
           Weight
-        Semibold
+        Bold
       %li
         %span
           Color
-        \#333333
+        \#ffffff
       %li
         %span
-          Size, large screen
-        30px
+          Size
+        20px
 
     .sample
       %ol.numbered-list
-        %li lorem ipsum
-        %li poterum bloop
-        %li lorem ipsum
-        %li poterum bloop
-        %li lorem ipsum
+        %li
+          %span lorem ipsum
+        %li
+          %span poterum bloop
+        %li
+          %span lorem ipsum
+        %li
+          %span poterum bloop
+        %li
+          %span lorem ipsum
 
   %h3#bulleted-lists bulleted lists
   %section.specs
@@ -311,70 +356,3 @@
         %li lorem ipsum
         %li poterum bloop
         %li lorem ipsum
-
-  %h3#video video
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
-      %li
-        %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
-
-    .sample
-      %p.block-quote TBD
-
-  %h3#sharing-module sharing module
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
-      %li
-        %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
-
-    .sample
-
-  %h3#comments comments
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
-      %li
-        %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
-
-    .sample

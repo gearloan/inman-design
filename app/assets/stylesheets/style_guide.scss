@@ -10,12 +10,16 @@ body {
 a {
   color:#2d92d0;
   text-decoration: none;
+
 }
 p {
   margin: 0 0 1em 0;
 }
 .bold {
   font-weight: bold;
+}
+.page-title {
+  text-transform: uppercase;
 }
 body[data-controller="style_guide"][data-action="typography"] {
     padding-bottom: 75vh;
@@ -39,6 +43,7 @@ body[data-controller="style_guide"][data-action="typography"] {
         overflow-y: scroll;
         height:100vh;
         padding-top: 50px;
+
         .back-btn {
           position: absolute;
           margin-bottom: 17px;
@@ -159,6 +164,7 @@ body[data-controller="style_guide"][data-action="typography"] {
   .image-credit {
     font-family: "baltoBook";
     font-size:12px;
+    color:#999999;
   }
   .body-copy {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -167,6 +173,11 @@ body[data-controller="style_guide"][data-action="typography"] {
   .sharing-top {
     font-size: 18px;
     font-family: "baltoBold"
+  }
+  .highlighted-text {
+    background: #5cb2e1;
+    color: #ffffff;
+    padding: 3px;
   }
   .block-quote {
     font-size: 12px;
@@ -177,24 +188,36 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 24px;
     width:280px;
     color: #00aae8;
+    line-height: 1.2;
   }
   .bullet-list {
+    color: #555;
     li {
-      &:before {content: "•"; color: #00aae8}
+      &:before {
+        content: "•";
+        color: #00aae8;
+        padding: 0 8px 0 0;
+      }
     }
   }
   .numbered-list {
     li {
       counter-increment: section;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      color: #555;
       &:before {
         content: counters(section,"");
         display: inline-block;
-        width: 3.5rem;
-        height: 3rem;
         text-align: center;
-        padding-top: .25rem;
+        padding: 2px 13px;
         color: #fff;
-        background: #00aae8;
+        background: #01abe9;
+        font-family: "baltoBold";
+        font-size: 20px;
+      }
+      span {
+        padding-left: 7px;
       }
     }
   }
@@ -203,6 +226,14 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 20px;
     line-height: 1.4;
     color: #444;
+  }
+  .inline-link {
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color:#2f719a;
+    }
   }
   .section-wrap {
     padding-left: 15px;
