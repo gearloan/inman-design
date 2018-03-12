@@ -21,6 +21,7 @@ p {
 .page-title {
   text-transform: uppercase;
 }
+
 body[data-controller="style_guide"][data-action="typography"] {
     padding-bottom: 75vh;
     padding-top: 90px;
@@ -297,5 +298,67 @@ body[data-controller="style_guide"][data-action="typography"] {
       position: relative;
       top: -12px;
     }
+  }
+
+  #btn-toggle-mobile {
+    border-bottom: 4px dotted #111;
+    padding: 4px 0 10px 0;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    .mobile {
+      color:#555;
+      transition: color .2s ;
+    }
+    .desktop {
+      color:#349ec7;
+      transition: color .2s;
+    }
+    .random-line {
+      background: #777;
+      height: 1px;
+      width:25px;
+      display:inline-block;
+      vertical-align: middle;
+    }
+    .random-rectangle {
+      height:10px;
+      width: 4px;
+      display:inline-block;
+      //border: 1px solid #349ec7;
+      background: #349ec7;
+      vertical-align: middle;
+      position: relative;
+      left: -12.5px;
+      transition: left .2s ease-in;
+    }
+  }
+  &.mobile-styles-active {
+    #btn-toggle-mobile {
+      .mobile { color:#349ec7; }
+      .desktop { color:#555; }
+      .random-rectangle { left: -25px; }
+    }
+  }
+  //// mobile styles
+  // body {
+  &.mobile-styles-active {
+    .eyebrow {}
+    .primary-headline {}
+    .dek {}
+    .byline {}
+    .sharing-top {}
+    .image-credit {}
+    .body-copy {}
+    .inline-link {}
+    .highlighted-text {}
+    .block-quote {}
+    .pull-quote {}
+    .numbered-list {}
+    .bullet-list {}
+    .rr-header {}
+    .rr-headline {}
+    .rr-byline {}
   }
 }
