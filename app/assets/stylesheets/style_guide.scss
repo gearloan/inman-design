@@ -100,7 +100,8 @@ body[data-controller="style_guide"][data-action="typography"] {
     background:#ffffff;
     padding:15px;
     color:#222;
-    min-width: 420px;
+    width: 100%;
+    transition: all .4s linear;
   }
   .design-logo-main {
     opacity: .4;
@@ -131,7 +132,7 @@ body[data-controller="style_guide"][data-action="typography"] {
     .rr-header {
       font-size: 30px;
       color: #010101;
-      width: 310px;
+      width: 290px;
       font-family: "harrietBold";
       border-bottom: 3px solid #5cb2e1;
     }
@@ -234,6 +235,29 @@ body[data-controller="style_guide"][data-action="typography"] {
     }
     &:visited {
       color:#2f719a;
+    }
+  }
+  .recirc-related-headline {
+    background:#14364b;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    max-width: 300px;
+  }
+  .recirc-related-blurb {
+    background:#0b1e2a;
+    color: #ffffff;
+    font-size: 13px;
+    max-width: 300px;
+  }
+  .recirc-category-headline {
+    font-family: "hli";
+    color: #ffffff;
+    font-size: 17px;
+    max-width: 300px;
+    p {
+      background: rgba(52, 158, 199, 0.9);
+      padding: 12px 24px;
     }
   }
   .section-wrap {
@@ -345,6 +369,7 @@ body[data-controller="style_guide"][data-action="typography"] {
   //// mobile styles
   // body {
   &.mobile-styles-active {
+    .sample { width: 320px;}
     .eyebrow {}
     .primary-headline {}
     .dek {}
@@ -361,5 +386,6 @@ body[data-controller="style_guide"][data-action="typography"] {
     .rr-header {}
     .rr-headline {}
     .rr-byline {}
+    .recirc-related-headline {}
   }
 }
