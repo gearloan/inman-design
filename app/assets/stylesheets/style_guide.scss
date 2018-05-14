@@ -78,7 +78,7 @@ body[data-controller="style_guide"][data-action="typography"] {
     margin: .5em 0 .25rem 0;
   }
 
-  h2 {
+  .section-wrap > h2 {
     margin-bottom: .5rem;
     clear: both;
     text-transform: capitalize;
@@ -153,6 +153,12 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 36px;
     line-height: 1;
     color:#374145;
+  }
+  .opinion-headline {
+    font-family: 'harrietbold';
+    font-size: 36px;
+    line-height: 1;
+    color:#544096;
   }
   .eyebrow, .byline {
     font-family: "BaltoBook";
