@@ -182,6 +182,11 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 18px;
     font-family: "baltoBold"
   }
+  .opinion-highlighted-text {
+    background: #544096;
+    color: #ffffff;
+    padding: 3px;
+  }
   .highlighted-text {
     background: #5cb2e1;
     color: #ffffff;
@@ -198,6 +203,23 @@ body[data-controller="style_guide"][data-action="typography"] {
     color: #00aae8;
     line-height: 1.2;
   }
+  .opinion-pull-quote {
+    font-family: "harrietRegular";
+    font-size: 24px;
+    width:280px;
+    color: #544096;
+    line-height: 1.2;
+  }
+  .opinion-bullet-list {
+    color: #555;
+    li {
+      &:before {
+        content: "•";
+        color: #544096;
+        padding: 0 8px 0 0;
+      }
+    }
+  }
   .bullet-list {
     color: #555;
     li {
@@ -205,6 +227,27 @@ body[data-controller="style_guide"][data-action="typography"] {
         content: "•";
         color: #00aae8;
         padding: 0 8px 0 0;
+      }
+    }
+  }
+  .opinion-numbered-list {
+    li {
+      counter-increment: section;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      color: #555;
+      &:before {
+        content: counters(section,"");
+        display: inline-block;
+        text-align: center;
+        padding: 2px 13px;
+        color: #fff;
+        background: #544096;
+        font-family: "baltoBold";
+        font-size: 20px;
+      }
+      span {
+        padding-left: 7px;
       }
     }
   }
@@ -234,6 +277,9 @@ body[data-controller="style_guide"][data-action="typography"] {
     font-size: 20px;
     line-height: 1.4;
     color: #444;
+  }
+  .inline-opinion-link {
+    color:#544096;
   }
   .inline-link {
     &:hover {
