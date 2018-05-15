@@ -155,7 +155,7 @@ body[data-controller="style_guide"][data-action="typography"] {
     color:#374145;
   }
   .opinion-headline {
-    font-family: 'harrietbold';
+    font-family: 'harrietbold-italic';
     font-size: 36px;
     line-height: 1;
     color:#544096;
@@ -177,6 +177,15 @@ body[data-controller="style_guide"][data-action="typography"] {
   .body-copy {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #555;
+  }
+  .opinion-body-copy {
+    font-family:"hr";
+    color: #555;
+    font-size: 16px;
+    a {
+      color:#544096;
+      text-decoration: underline;
+    }
   }
   .sharing-top {
     font-size: 18px;
@@ -204,7 +213,7 @@ body[data-controller="style_guide"][data-action="typography"] {
     line-height: 1.2;
   }
   .opinion-pull-quote {
-    font-family: "harrietRegular";
+    font-family: "baltoBold";
     font-size: 24px;
     width:280px;
     color: #544096;

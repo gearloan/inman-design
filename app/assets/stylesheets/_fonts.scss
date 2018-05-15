@@ -20,10 +20,24 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'harrietbold-italic';
+  src: font-url('hbi.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("hbi.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
   font-family: 'harrietRegular';
   src: font-url('hr.otf'); /* IE9 Compat Modes */
   src: local("☺"),
     font-url("hr.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'harrietRegular-italic';
+  src: font-url('hri.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("hri.otf") format("opentype");
   font-style: normal;
 }
 @font-face {
