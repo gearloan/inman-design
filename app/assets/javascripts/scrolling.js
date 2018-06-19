@@ -12,7 +12,7 @@ $( document ).ready(function() {
     $("body").toggleClass('mobile-styles-active');
   }
   // on click toggle the class 'mobile' to body
-  document.getElementById("btn-toggle-mobile").onclick = function () {toggleMobile();};
+  $("#btn-toggle-mobile").onclick = function () {toggleMobile();};
 
 
 });

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'design_explorations/recirculation'
+
+  get 'design_explorations/guides'
+
   root 'style_guide#index'
 
   get 'style_guide/index'
