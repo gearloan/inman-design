@@ -10,4 +10,12 @@ $( window ).load(function() {
 
   }
 
+  $('.btn-all-guides').click(function(){
+    $("#all-guides").fadeIn();
+  });
+
+  $('.btn-close-guides-menu').click(function(){
+    $("#all-guides").fadeOut();
+  });
+
 });

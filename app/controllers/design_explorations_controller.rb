@@ -3,5 +3,6 @@ class DesignExplorationsController < ApplicationController
   end
 
   def guides
+    render layout: 'fake-inman'
   end
 end

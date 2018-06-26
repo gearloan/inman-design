@@ -1,0 +1,49 @@
+#all-guides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #444444;
+  z-index: 4;
+  display: none;
+  .btn-close-guides-menu { z-index: 9;position: relative;}
+  h4 {
+    color: #ffffff;
+    font-family: "baltoBold";
+    font-size: 24px;
+    padding: 16px;
+    text-align: center;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    span {
+      color: #888888;
+    }
+  }
+  ul.guides-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    li {
+      margin: 10px;
+      min-width:200px;
+      height:320px;
+      position: relative;
+      .img {
+        display: block;
+        background: #222222;
+        height: 90%;
+        position: relative;
+        top: 0;
+      }
+      .guide-card-title {
+        position: relative;
+        margin-top: 8px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}

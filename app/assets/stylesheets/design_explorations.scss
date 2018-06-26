@@ -2,6 +2,47 @@
   display: none;
 }
 body[data-controller="design_explorations"][data-action="guides"] {
+  .below-guides {
+    margin-top:24px;
+    width: 100%;
+    text-align: center;
+    img {
+      max-width:1024px;
+    }
+  }
+  .btn-guides {
+    padding: 22px 38px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    background: asset-url("arrow-back.png") no-repeat 12px center;
+    background-size: 21px 21px;
+    color:#2d92d0;
+    cursor: pointer;
+  }
+  .fake-inman-nav {
+    width: 100%;
+    height: 64px;
+    background: #2d92d0;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 18px;
+    h2 {
+      color: #ffffff;
+      font-family: "baltoBold";
+      font-size: 24px;
+      padding: 16px;
+    }
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top:20px;
+      height: 23px;
+      width: 36px;
+      background: asset-url("hamburger.png") no-repeat center;
+    }
+  }
   min-height: 101vh;//ensure scroll event is available even if page is shorter than viewport
   .content{
     position: relative;
@@ -11,19 +52,14 @@ body[data-controller="design_explorations"][data-action="guides"] {
     overflow: hidden;
     background: #FFFFFF;
     margin:auto;
+    //margin-top: 60px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   .guides-toc {
     border-right:1px solid #ccc;
     height: 100%;
     min-width: 280px;
-    h5 {
-      padding: 22px 38px;
-      border-bottom: 1px solid #ccc;
-      width: 100%;
-      background: asset-url("arrow-back.png") no-repeat 12px center;
-      background-size: 21px 21px;
-    }
+
     h6 {
       margin-top:22px;
       margin-bottom:4px;
@@ -60,7 +96,7 @@ body[data-controller="design_explorations"][data-action="guides"] {
   }
   .guides-cover {
     position: absolute;
-    z-index: 3;
+    z-index: 10;
     overflow: hidden;
     top: 0;
     left:0;
@@ -119,7 +155,7 @@ body[data-controller="design_explorations"][data-action="guides"] {
   }
   .page-nav {
     width: 100%;
-    height: 64px;
+    height: 67px;
     position: relative;
     border-bottom: 1px solid #ccc;
     text-transform: capitalize;
