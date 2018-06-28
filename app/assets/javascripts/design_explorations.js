@@ -21,6 +21,8 @@ $( window ).load(function() {
   });
 
   $('.toc-item').click(function(){
+    $(".toc-item").removeClass("active");
+    $(this).addClass("active");
     $("section.guides-body").addClass("hidden");
     chapNum = this.dataset.chapter;
     $("section.chapter-" + chapNum).removeClass("hidden");
