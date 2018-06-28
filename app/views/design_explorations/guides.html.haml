@@ -2,7 +2,6 @@
   .left
   .right
 
-= render '/partials/all-guides';
 
 .guides-toc
   %h5.btn-guides.btn-all-guides All Guides
@@ -20,6 +19,7 @@
       sponsored by:
       =image_tag("sponsor.png");
 .guides-rightSide
+  = render '/partials/all-guides';
   =render "design_explorations/chapters/bitcoin-1";
   =render "design_explorations/chapters/bitcoin-2";
   =render "design_explorations/chapters/bitcoin-3";
