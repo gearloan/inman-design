@@ -12,10 +12,12 @@ $( window ).load(function() {
 
   $('.btn-all-guides').click(function(){
     $("#all-guides").fadeIn();
+    $(".toc-wrap").addClass("slide-left");
   });
 
   $('.btn-close-guides-menu').click(function(){
     $("#all-guides").fadeOut();
+    $(".toc-wrap").removeClass("slide-left");
   });
 
   $('.toc-item').click(function(){

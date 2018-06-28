@@ -4,20 +4,38 @@
 
 
 .guides-toc
-  %h5.btn-guides.btn-all-guides All Guides
+  %ul.toc-wrap
+    %li
+      %h5.btn-guides.btn-all-guides All Guides
+      %h6 01: Crypto & Real Estate
+      %ul.toc
+        %li.toc-item{"data-chapter" => "0"} i. cover
+        %li.toc-item{"data-chapter" => "1"} 1. overview
+        %li.toc-item{"data-chapter" => "2"} 2. Cryptocurrency
+        %li.toc-item{"data-chapter" => "3"} 3. Blockchain
+        %li.toc-item{"data-chapter" => "4"} 4. Bitcoin
+        %li.toc-item{"data-chapter" => "5"} 5. Etherium to Doge
+        %li.toc-item{"data-chapter" => "6"} 6. lorem ipsum
+        %li.sponsor
+          sponsored by:
+          =image_tag("sponsor.png");
 
-  %h6 01: Crypto & Real Estate
-  %ul
-    %li.toc-item{"data-chapter" => "0"} i. cover
-    %li.toc-item{"data-chapter" => "1"} 1. overview
-    %li.toc-item{"data-chapter" => "2"} 2. Cryptocurrency
-    %li.toc-item{"data-chapter" => "3"} 3. Blockchain
-    %li.toc-item{"data-chapter" => "4"} 4. Bitcoin
-    %li.toc-item{"data-chapter" => "5"} 5. Etherium to Doge
-    %li.toc-item{"data-chapter" => "6"} 6. lorem ipsum
-    %li.sponsor
-      sponsored by:
-      =image_tag("sponsor.png");
+      %li
+        %h5.btn-guides.btn-close-guides-menu Back
+        %h6 All Guides
+        %ul.toc
+          %li.toc-item{"data-chapter" => "0"} 01
+          %li.toc-item{"data-chapter" => "1"} 02
+          %li.toc-item{"data-chapter" => "2"} 03
+          %li.toc-item{"data-chapter" => "3"} 04
+          %li.toc-item{"data-chapter" => "4"} 05
+          %li.toc-item{"data-chapter" => "5"} 06
+          %li.toc-item{"data-chapter" => "6"} 07
+          %li.sponsor
+            sponsored by:
+            =image_tag("sponsor.png");
+
+
 .guides-rightSide
   = render '/partials/all-guides';
   =render "design_explorations/chapters/bitcoin-1";
