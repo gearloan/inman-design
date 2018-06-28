@@ -18,4 +18,10 @@ $( window ).load(function() {
     $("#all-guides").fadeOut();
   });
 
+  $('.toc-item').click(function(){
+    $("section.guides-body").addClass("hidden");
+    chapNum = this.dataset.chapter;
+    $("section.chapter-" + chapNum).removeClass("hidden");
+  });
+
 });
