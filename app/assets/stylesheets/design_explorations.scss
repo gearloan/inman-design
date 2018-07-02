@@ -89,6 +89,7 @@ body[data-controller="design_explorations"][data-action="guides"] {
       position: relative;
       height: 85%;
       li {
+        cursor: pointer;
         padding: 12px 30px;
         &.active {
           background: #dde9f5;
