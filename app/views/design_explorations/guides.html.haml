@@ -3,9 +3,12 @@
   .right
 
 
-.guides-toc
+.guides-toc.mobile-nav-hidden
+
+
   %ul.toc-wrap
     %li
+      %span.close-toc-mobile.hidden close nav
       %h5.btn-guides.btn-all-guides All Guides
       %h6 01: Crypto & Real Estate
       %ul.toc
@@ -18,7 +21,8 @@
         %li.toc-item{"data-chapter" => "6"} 6. lorem ipsum
         %li.sponsor
           sponsored by:
-          =image_tag("sponsor.png");
+          =image_tag("sponsor.png")
+        %li.toc-mobile-btn.hidden show nav
 
       %li
         %h5.btn-guides.btn-close-guides-menu Back

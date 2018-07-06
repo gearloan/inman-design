@@ -10,6 +10,29 @@ $( window ).load(function() {
 
   }
 
+
+  // show toc at mobile
+  $('.toc-mobile-btn').click(function(){
+    if ( $(".guides-toc").hasClass("mobile-nav-hidden") ) {
+      $(".guides-toc").removeClass("mobile-nav-hidden");
+      $(".guides-toc").addClass("mobile-nav-showing");
+    }
+  });
+  // hide toc at mobile
+  $('.close-toc-mobile').click(function(){
+    if ( $(".guides-toc").hasClass("mobile-nav-showing") ) {
+      $(".guides-toc").addClass("mobile-nav-hidden");
+      $(".guides-toc").removeClass("mobile-nav-showing");
+    }
+  });
+
+
+  $('.btn-close-guides-menu').click(function(){
+    $("#all-guides").fadeOut();
+    $(".toc-wrap").removeClass("slide-left");
+  });
+
+// show all guides
   $('.btn-all-guides').click(function(){
     $("#all-guides").fadeIn();
     $(".toc-wrap").addClass("slide-left");
