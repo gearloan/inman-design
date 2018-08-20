@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'design_explorations/guides'
 
+  get 'design_explorations/new_stories_menu'
+
   root 'style_guide#index'
 
   get 'style_guide/index'
