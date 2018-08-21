@@ -38,20 +38,28 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
 
 
   .new-stories-nav {
+    font-size: 62px;
+    font-family: "baltoBook";
     border-top: 1px solid #fff;
     height:76px;
     background: #2d92d0;
+    .drop {
+      width:100vw;
+      height:100vh;
+      background: #ffffff;
+    }
     ul {
       display: flex;
       justify-content: space-around;
       height:100%;
       box-sizing: initial;
-      &:hover {
-        border-bottom: 8px solid #5bafdb;
-        li {
-        }
+
+      &.menu-border-on {
+        border-bottom: 10px solid #5bafdb;
       }
+
       li {
+        position: relative;
         width: 33.33%;
         padding: 10px 0;
         font-size: 32px;
@@ -63,13 +71,121 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           padding: 16px 0;
           font-size: 24px;
         }
+        .close-subnav {
+          display: none;
+          content: "x";
+          position: absolute;
+          top: 3px;
+          right: 3px;
+          height: 24px;
+          width: 24px;
+          background: lightgrey;
+          border-radius: 50%;
+          padding: 3px;
+          font-size: 22px;
+          line-height: 1;
+        }
         &:last-child {
           border: none;
         }
-        &:hover {
+        &.active {
           background: #5bafdb;
+          .drop {
+            z-index: 9;
+            display: block;
+          }
+          .close-subnav {
+            display: block;
+          }
         }
-        span {
+        .drop {
+          font-size: 48px;
+
+          color: #333;
+          display: none;
+          width:100vw;
+          height:100vh;
+          background: #f6fafd;
+          position: absolute;
+          top: 84px;
+          left:0;
+          text-align: left;
+          padding:30px 20px;
+          line-height: 1.2;
+        }
+        .first-drop {
+          p {
+            padding:0 30px 0 40px;
+          }
+          .date {
+            background: #2d92d0;
+            display: inline-block ;
+            color: #ffffff;
+            font-size: smaller;
+            padding: 14px 40px;
+            margin: 28px 0;
+          }
+        }
+        .first-drop, .third-drop {
+          p {
+            position: relative;
+            &::before {
+              content:"";
+              border-radius: 50%;
+              height:22px;
+              width:22px;
+              display: block;
+              background: #2d92d0;
+              position: absolute;
+              top:12px;
+              left:4px;
+            }
+          }
+        }
+        .third-drop {
+          p {
+            padding:0 30px 0 40px;
+          }
+        }
+        &:nth-child(2){
+          .drop {
+            left:-33.33vw;
+          }
+        }
+        &:nth-child(3){
+          .drop {
+            left:-66.66vw;
+          }
+        }
+        .hline, .subhline {
+          font-family: "baltoBold";
+          border-left:12px solid #2d92d0;
+          padding: 0px 15px;
+          line-height: 1.1;
+          span {
+            font-family: "baltoBook";
+            display: block;
+            font-size:smaller;
+            margin-top: 8px;
+          }
+        }
+        .hline {
+          margin:0px 20px;
+        }
+        .hline ~ .hline {
+          margin:78px 20px;
+        }
+        .subhline {
+          padding: 28px 15px 28px 48px;
+          margin:0px 20px;
+          margin-top:-78px;
+        }
+        .subhline ~ .subhline {
+          padding: 28px 15px 28px 48px;
+          margin:0px 20px;
+        }
+
+        > span {
           font-size: 24px;
           background: red;
           border-radius: 50%;

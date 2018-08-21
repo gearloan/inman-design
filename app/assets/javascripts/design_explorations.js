@@ -1,5 +1,21 @@
 $( window ).load(function() {
 
+
+  //START subnav
+  $('.new-stories-nav ul li').click(function(){
+    //reset nav
+    // toggle active
+    if ($(this).hasClass("active")) {
+      $('.new-stories-nav ul li').removeClass("active");
+      $('.new-stories-nav ul').removeClass("menu-border-on");
+      //alert("poo");
+    } else {
+      $('.new-stories-nav ul li').removeClass("active");
+      $(this).addClass("active");
+      $('.new-stories-nav ul').addClass("menu-border-on");
+    }
+  });
+  // END subnav
   window.onscroll = function (e) {
     //alert(0);
     $(".guides-cover .left").addClass("slide-up");
