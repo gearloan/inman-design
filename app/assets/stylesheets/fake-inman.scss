@@ -2,6 +2,9 @@ body[data-controller="design_explorations"][data-action="new_stories_menu"] {
   .below-guides {
     display: none;
   }
+  background: asset-url("mobile-hp.jpg") no-repeat center;
+  background-size: cover;
+  background-position: 0 148px;
 }
 body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"] {
   .fake-inman-nav {
