@@ -27,6 +27,8 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       background-size: contain;
       text-indent: -3000em;
       overflow: hidden;
+      position: relative;
+      top: 6px;
     }
     .menu-btn {
       color: #fff;
