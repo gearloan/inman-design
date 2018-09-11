@@ -82,8 +82,11 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     background: #2d92d0;
     .drop {
       width:100vw;
-      height:100vh;
+      height:auto;
       background: #ffffff;
+      @media(max-width:1024px) {
+        height:100vh;
+      }
     }
     ul {
       display: flex;
@@ -130,6 +133,9 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           .drop {
             z-index: 9;
             display: block;
+            @media(min-width: 1024px) {
+              display: flex;
+            }
           }
           .close-subnav {
             display: block;
@@ -141,7 +147,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           color: #333;
           display: none;
           width:100vw;
-          height:100vh;
+          //height:100vh;
           background: #f6fafd;
           position: absolute;
           top: 98px;
@@ -151,6 +157,16 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           line-height: 1.2;
         }
         .first-drop {
+
+          @media(min-width:1024px) {
+            //display: flex;
+            > span {
+              display: inline-block;
+              width:33.3333%;
+              font-size: 18px;
+              padding: 0 24px;
+            }
+          }
           p {
             padding:0 30px 0 40px;
           }
@@ -166,6 +182,9 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         .first-drop, .third-drop {
           p {
             position: relative;
+            @media(min-width:1024px) {
+              padding: 0 40px 0 26px;
+            }
             &::before {
               content:"";
               border-radius: 50%;
@@ -176,10 +195,18 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
               position: absolute;
               top:12px;
               left:4px;
+              @media(min-width:1024px) {
+                top:6px;
+                height:11px;
+                width:11px;
+              }
             }
           }
         }
         .third-drop {
+          @media(min-width:1024px) {
+            font-size: 16px;
+          }
           p {
             padding:0 30px 0 40px;
           }
@@ -187,6 +214,13 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         &:nth-child(2){
           .drop {
             left:-33.33vw;
+            @media(min-width:1024px) {
+              font-size: 18px;
+              p {
+                height: 120px;
+                align-self: flex-start;
+              }
+            }
           }
         }
         &:nth-child(3){
@@ -194,34 +228,38 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             left:-66.66vw;
           }
         }
-        .hline, .subhline {
-          font-family: "baltoBold";
-          border-left:12px solid #2d92d0;
-          padding: 0px 15px;
-          line-height: 1.1;
-          span {
-            font-family: "baltoBook";
-            display: block;
-            font-size:smaller;
-            margin-top: 8px;
+          .hline, .subhline {
+            font-family: "baltoBold";
+            border-left:4px solid #2d92d0;
+            padding: 0px 15px;
+            line-height: 1.1;
+            span {
+              font-family: "baltoBook";
+              display: block;
+              font-size:smaller;
+              margin-top: 8px;
+            }
+          }
+        @media(max-width:1024px) {
+          .hline, .subhline {
+            border-left:12px solid #2d92d0;
+          }
+          .hline {
+            margin:0px 20px;
+          }
+          .hline ~ .hline {
+            margin:78px 20px;
+          }
+          .subhline {
+            padding: 28px 15px 28px 48px;
+            margin:0px 20px;
+            margin-top:-78px;
+          }
+          .subhline ~ .subhline {
+            padding: 28px 15px 28px 48px;
+            margin:0px 20px;
           }
         }
-        .hline {
-          margin:0px 20px;
-        }
-        .hline ~ .hline {
-          margin:78px 20px;
-        }
-        .subhline {
-          padding: 28px 15px 28px 48px;
-          margin:0px 20px;
-          margin-top:-78px;
-        }
-        .subhline ~ .subhline {
-          padding: 28px 15px 28px 48px;
-          margin:0px 20px;
-        }
-
         > span {
           font-size: 14px;
           @media(max-width:1024px) {
