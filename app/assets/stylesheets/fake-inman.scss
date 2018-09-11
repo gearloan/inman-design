@@ -2,15 +2,21 @@ body[data-controller="design_explorations"][data-action="new_stories_menu"] {
   .below-guides {
     display: none;
   }
-  background: asset-url("mobile-hp.jpg") no-repeat center;
-  background-size: cover;
-  background-position: 0 148px;
+  @media(max-width: 1024px){
+    margin-bottom: 0;
+    background: asset-url("mobile-hp.jpg") no-repeat center;
+    background-position: 0 148px;
+    background-size: cover;
+  }
+  background: asset-url("hp.jpg") no-repeat center;
+  background-position: center 160px;
+  background-size: 1200px;;
 }
 body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"] {
   .fake-inman-nav {
     width: 100%;
     font-family: "baltoBook";
-    height: 74px;
+    height: 52px;
     background: #2d92d0;
     position: relative;
     top: 0;
@@ -18,6 +24,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     padding:12px;
     @media(max-width: 1024px){
       margin-bottom: 0;
+      height: 74px;
     }
     h2 {
       color: #ffffff;
@@ -29,18 +36,24 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       overflow: hidden;
       position: relative;
       top: 6px;
+      @media(min-width: 1024px){
+        font-size: 14px;
+      }
     }
     .menu-btn {
       color: #fff;
-      font-size: 32px;
+    font-size: 14px;
       position: absolute;
-      left: 34px;
-      top: 14px;
-      height: 48px;
-      width: 127px;
       border: 1px solid #ffffff;
       padding: 5px 17px;
       line-height: 1.3;
+      @media(max-width: 1024px){
+        left: 34px;
+        top: 14px;
+        height: 48px;
+        width: 127px;
+        font-size: 32px;
+      }
     }
     .account-btn {
       color: #fff;
@@ -50,16 +63,22 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       top:20px;
       height: 23px;
       width: 36px;
+      @media(min-width: 1024px){
+        font-size: 14px;
+      }
     }
   }
 
 
 
   .new-stories-nav {
+    height:42px;
     font-size: 62px;
     font-family: "baltoBook";
     border-top: 1px solid #fff;
-    height:76px;
+    @media(max-width:1024px) {
+      height:76px;
+    }
     background: #2d92d0;
     .drop {
       width:100vw;
@@ -86,8 +105,8 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         height:inherit;
         border-right: 1px solid rgba(255,255,255,.5);
         @media(min-width: 1024px){
-          padding: 16px 0;
-          font-size: 24px;
+          padding: 8px 0;
+          font-size: 18px;
         }
         .close-subnav {
           display: none;
@@ -204,7 +223,10 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         }
 
         > span {
-          font-size: 24px;
+          font-size: 14px;
+          @media(max-width:1024px) {
+            font-size: 24px;
+          }
           background: red;
           border-radius: 50%;
           padding:6px;
