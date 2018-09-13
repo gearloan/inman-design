@@ -106,7 +106,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       height:auto;
       background: #ffffff;
       @media(max-width:1024px) {
-        //  height:100vh;
+         min-height:100vh;
       }
     }
     ul {
