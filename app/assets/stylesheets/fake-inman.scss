@@ -140,11 +140,12 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           background: rgba(255,255,255,.5);
           display: inline-block;
           position: absolute;
-          top: -38px;
+          top: -18px;
           right: 0;
         }
         @media(min-width: 1024px){
           padding: 20px 0;
+          top: -38px;
           font-size: 18px;
         }
         .close-subnav {
