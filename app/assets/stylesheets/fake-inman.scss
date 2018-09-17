@@ -74,7 +74,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     }
     .account-btn {
       color: #fff;
-      font-size:28px;
+      font-size:34px;
       position: absolute;
       right: 50px;
       top:52px;
@@ -137,6 +137,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         color: #fff;
         text-align: center;
         //height:inherit;
+        font-size: 34px;
         &::after {
           content: "";
           width: 1px;
