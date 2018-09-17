@@ -16,7 +16,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
   .fake-inman-nav {
     width: 100%;
     font-family: "baltoBook";
-    height: 52px;
+    //height: 52px;
     background: #4679ac;
     position: relative;
     top: 0;
@@ -44,6 +44,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       text-indent: -3000em;
       overflow: hidden;
       position: relative;
+      min-height: 34px;
       top: 6px;
       @media(min-width: 1024px){
         font-size: 14px;
@@ -73,7 +74,8 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       height: 23px;
       width: 36px;
       @media(min-width: 1024px){
-        font-size: 14px;
+        font-size: 18px;
+        top:28px;
       }
     }
   }
@@ -138,11 +140,11 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           background: rgba(255,255,255,.5);
           display: inline-block;
           position: absolute;
-          top: -18px;
+          top: -38px;
           right: 0;
         }
         @media(min-width: 1024px){
-          padding: 8px 0;
+          padding: 20px 0;
           font-size: 18px;
         }
         .close-subnav {
