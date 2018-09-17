@@ -136,16 +136,17 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           content: "";
           width: 1px;
           height: 30px;
-          margin: 10% 0;
           background: rgba(255,255,255,.5);
           display: inline-block;
           position: absolute;
-          top: -18px;
+          top: 16px;
           right: 0;
+          @media(min-width: 1024px){
+            //top:-38px;
+          }
         }
         @media(min-width: 1024px){
           padding: 20px 0;
-          top: -38px;
           font-size: 18px;
         }
         .close-subnav {
