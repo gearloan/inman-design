@@ -33,13 +33,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       position: absolute;
       z-index: 9;
       left:20px;
-      top:34px;
-      .hamburger-inner::before {
-        top: 20px;
-      }
-      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-        width: 70px;
-      }
+      top:26px;
     }
 
     h2 {
