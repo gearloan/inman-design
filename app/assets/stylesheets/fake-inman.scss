@@ -153,12 +153,12 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           display: none;
           content: "x";
           position: absolute;
-          top: 3px;
-          right: 3px;
-          height: 24px;
-          width: 24px;
+          top: 0;
+          right: 0;
+          height: 30px;
+          width: 30px;
           background: grey;
-          border-radius: 50%;
+          border-radius: 0;
           padding: 3px;
           font-size: 30px;
           line-height: .7;
@@ -184,7 +184,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           }
         }
         .drop {
-          font-size: 24px;
+          font-size: 40px;
 
           color: #333;
           display: none;
@@ -195,7 +195,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           top: 70px;
           left:0;
           text-align: left;
-          padding:30px 20px;
+          padding:60px 20px;
           line-height: 1.2;
           @media(min-width:1024px) {
             top:68px;
@@ -221,7 +221,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             color: #ffffff;
             font-size: smaller;
             padding: 14px 40px;
-            margin: 28px 0;
+            margin: 0px 0 28px 0;
           }
         }
         .first-drop, .third-drop {
@@ -233,12 +233,12 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             &::before {
               content:"";
               border-radius: 50%;
-              height:14px;
-              width:14px;
+              height:20px;
+              width:20px;
               display: block;
               background: #4679ac;
               position: absolute;
-              top:6px;
+              top:12px;
               left:4px;
               @media(min-width:1024px) {
                 top:6px;
