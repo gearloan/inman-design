@@ -7,6 +7,8 @@ $( window ).load(function() {
     forEach(hamburgers, function(hamburger) {
       hamburger.addEventListener("click", function() {
         this.classList.toggle("is-active");
+        $(".new-stories-nav").toggle("slideSubNav");
+        $(".main-dropdown").toggle("opacity-up");
       }, false);
     });
   }

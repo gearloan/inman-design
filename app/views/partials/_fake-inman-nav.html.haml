@@ -1,15 +1,22 @@
 .fake-inman-nav
-  %button.hamburger.hamburger--collapse{:type => "button"}
-    %span.hamburger-box
-      %span.hamburger-inner
-  %h2 inman
-  %span.account-btn Login
+  .top-bar
+    %button.hamburger.hamburger--collapse{:type => "button"}
+      %span.hamburger-box
+        %span.hamburger-inner
+    %h2 inman
+    %span.account-btn Login
+    .main-dropdown
+      %ul
+        %li
+          hi
+        %li
+          hello
 
   .new-stories-nav
     %ul
       %li
         %span.close-subnav x
-        %span 
+        %span
         New Stories
         .first-drop.drop
           %span
@@ -36,36 +43,36 @@
         %span.close-subnav x
         Events
         .second-drop.drop
-          %p.hline
-            Luxury Connect Beverly hills 2018
-            %span
-              October 16 - 18th, 2018 –
-              =link_to("Tickets", "#")
-          %p.hline
-            Inman Connect New York 2018
-            %span
-              January 29 - February 1, 2018 –
-              =link_to("Tickets", "#")
-          %p.subhline
-            Indie broker summit New York 2019
-            %span
-              January 29th, 2019 –
-              =link_to("Tickets", "#")
-          %p.subhline
-            Influencer Bash New York 2019
-            %span
-              January 29th, 2019 –
-              =link_to("Tickets", "#")
-          %p.subhline
-            Capital Connect New York 2019
-            %span
-              January 31st, 2019 –
-              =link_to("Tickets", "#")
-          %p.hline
-            Inman Connect Las Vegas 2019
-            %span
-              Fenruary 1st, 2019 –
-              =link_to("Tickets", "#")
+          %ul.events-wrap
+            %li
+              %h5 Connect Beverly Hills 2018
+              %h4.event-venue Julliard Center
+              %p.event-desc Lorem um quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              =link_to("Luxury Connect >", "#")
+              %span.event-date
+                Oct
+                %br
+                18-25
+
+            %li
+              %h5 Connect Las Vegas 2019
+              %h4.event-venue Julliard Center
+              %p.event-desc Lorem um quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              =link_to("Connect LV >", "#")
+              %span.event-date
+                Jan
+                %br
+                1-5
+            %li
+              %h5 Connect New York 2019
+              %h4.event-venue Julliard Center
+              %p.event-desc Lorem um quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              =link_to("Connect Ny >", "#")
+              %span.event-date
+                Jul
+                %br
+                24-29
+
 
       %li
         %span.close-subnav x

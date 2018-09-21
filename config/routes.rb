@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'design_explorations/new_stories_menu'
 
+  get 'design_explorations/conf_guide'
+
   root 'style_guide#index'
 
   get 'style_guide/index'

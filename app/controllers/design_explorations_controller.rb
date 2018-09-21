@@ -10,4 +10,8 @@ class DesignExplorationsController < ApplicationController
     render layout: 'fake-inman'
   end
 
+  def conf_guide
+    render layout: 'fake-inman'
+  end
+
 end

@@ -1,4 +1,4 @@
-body[data-controller="design_explorations"][data-action="new_stories_menu"] {
+body[data-controller="design_explorations"][data-action="new_stories_menu"], , body[data-controller="design_explorations"][data-action="conf_guide"] {
   .below-guides {
     display: none;
   }
@@ -12,7 +12,14 @@ body[data-controller="design_explorations"][data-action="new_stories_menu"] {
   background-position: center 160px;
   background-size: 1200px;;
 }
-body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"] {
+body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"],, body[data-controller="design_explorations"][data-action="conf_guide"] {
+  .opacity-up {
+    opacity: 1;
+  }
+  @keyframes slideSubNavDown {
+    0%   { top: 0; }
+    100% { top: 95vh; }
+  }
   .fake-inman-nav {
     width: 100%;
     font-family: "baltoBook";
@@ -21,7 +28,17 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     position: relative;
     top: 0;
     left: 0;
-    padding: 38px 0;
+    padding: 38px 0 14px 0;
+    .top-bar {
+      height: 92px;
+      position: relative;
+      .main-dropdown {
+        opacity: 0;
+        height:100vh;
+        width: 100%;
+        background: #4679ac;
+      }
+    }
     @media(max-width: 1024px){
       margin-bottom: 0;
       height: auto;
@@ -29,11 +46,16 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     button {
       outline: none;
     }
+    &.slideSubNav {
+      .new-stories-nav {
+        //animation: slideSubNavDown 300ms forwards;
+      }
+    }
     .hamburger {
       position: absolute;
       z-index: 9;
       left:20px;
-      top:26px;
+      top:-8px;
     }
 
     h2 {
@@ -53,7 +75,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     }
     .menu-btn {
       color: #fff;
-    font-size: 14px;
+      font-size: 14px;
       position: absolute;
       border: 1px solid #ffffff;
       padding: 5px 17px;
@@ -71,7 +93,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
       font-size:34px;
       position: absolute;
       right: 50px;
-      top:52px;
+      top:10px;
       @media(min-width: 1024px){
         font-size: 18px;
         top:28px;
@@ -84,7 +106,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
   .new-stories-nav {
 
     height:66px;
-    top:26px;
+    top:0px;
     position: relative;
     font-size: 30px;
     font-family: "baltoBook";
@@ -103,6 +125,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
     }
     background: #4679ac;
     .drop {
+      display: none;
       width:100vw;
       height:auto;
       background: #ffffff;
@@ -110,7 +133,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
          min-height:100vh;
       }
     }
-    ul {
+    > ul {
       //padding:8px;
       display: flex;
       justify-content: space-around;
@@ -124,7 +147,7 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         }
       }
 
-      li {
+      > li {
         position: relative;
         width: 33.33%;
         padding: 10px 0;
@@ -132,14 +155,15 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
         text-align: center;
         //height:inherit;
         font-size: 34px;
+        margin-top: 2px;
         &::after {
           content: "";
           width: 1px;
-          height: 30px;
+          height: 36px;
           background: rgba(255,255,255,.5);
           display: inline-block;
           position: absolute;
-          top: 16px;
+          top: 14px;
           right: 0;
           @media(min-width: 1024px){
             //top:-38px;
@@ -192,10 +216,10 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           //height:100vh;
           background: #f6fafd;
           position: absolute;
-          top: 70px;
+          top: 90px;
           left:0;
           text-align: left;
-          padding:60px 20px;
+          padding:60px 40px;
           line-height: 1.2;
           @media(min-width:1024px) {
             top:68px;
@@ -248,6 +272,52 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             }
           }
         }
+        .second-drop {
+          padding-left: 0;
+          padding-right: 0;
+          ul.events-wrap {
+            font-size: 36px;
+            li {
+              padding:42px 5% 42px 20%;
+              position: relative;
+              &:nth-child(even) {
+                background:#f3f3f3;
+              }
+              &:first-child {
+                padding-top:0;
+                .event-date {
+                  top: 4px;
+                }
+              }
+              h5, h4, a {
+                letter-spacing: 0.6px;
+              }
+              p {
+                font-size: 32px;
+                line-height: 1.5;
+                margin-bottom: 18px;
+              }
+              .event-venue {
+                margin-bottom: 18px;
+              }
+              a {
+                font-size: 32px;
+                color:#3cbeee;
+                font-family: "baltoBold";
+              }
+              h5 {
+                font-family: "baltoBold";
+              }
+              .event-date {
+                font-size: 32px;
+                position: absolute;
+                left: 34px;
+                top: 44px;
+              }
+            }
+          }
+        }
+
         .third-drop {
           @media(min-width:1024px) {
             font-size: 16px;
@@ -273,37 +343,8 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             left:-66.66vw;
           }
         }
-          .hline, .subhline {
-            font-family: "baltoBold";
-            border-left:4px solid #4679ac;
-            padding: 0px 15px;
-            line-height: 1.1;
-            span {
-              font-family: "baltoBook";
-              display: block;
-              font-size:smaller;
-              margin-top: 8px;
-            }
-          }
-        @media(max-width:1024px) {
-          .hline, .subhline {
-            border-left:12px solid #4679ac;
-          }
-          .hline {
-            margin:0px 20px;
-          }
-          .hline ~ .hline {
-            margin:48px 20px;
-          }
-          .subhline {
-            padding: 28px 15px 28px 48px;
-            margin:0px 20px;
-            margin-top:-78px;
-          }
-          .subhline ~ .subhline {
-            padding: 28px 15px 28px 48px;
-            margin:0px 20px;
-          }
+        .hline {
+
         }
         > span {
           @media(min-width:1024px) {
