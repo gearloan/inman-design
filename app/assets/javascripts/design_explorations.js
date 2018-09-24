@@ -8,7 +8,9 @@ $( window ).load(function() {
       hamburger.addEventListener("click", function() {
         this.classList.toggle("is-active");
         $(".new-stories-nav").toggle("slideSubNav");
-        $(".main-dropdown").toggle("opacity-up");
+        $(".main-dropdown").toggleClass("opacity-up");
+        $('.new-stories-nav ul li').removeClass("active");
+        $('.new-stories-nav ul').removeClass("menu-border-on");
       }, false);
     });
   }
