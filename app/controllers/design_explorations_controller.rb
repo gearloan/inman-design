@@ -14,4 +14,8 @@ class DesignExplorationsController < ApplicationController
     render layout: 'fake-inman'
   end
 
+  def list_article
+    render layout: 'fake-inman'
+  end
+
 end

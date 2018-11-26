@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'design_explorations/conf_guide'
 
+  get 'design_explorations/list_article'
+
   root 'style_guide#index'
 
   get 'style_guide/index'

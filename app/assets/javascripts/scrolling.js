@@ -1,4 +1,15 @@
+$(document).ready(function () {
+    // Handler for .ready() called.
+    if ($("html").scrollTop() < $(".fake-inman-nav").innerHeight()) {
+      $('html, body').animate({
+          scrollTop: $('.inman-logo-bw').offset().top
+      }, 'slow');
+    }
+});
 $( document ).ready(function() {
+  //$( 'html, body' ).scrollTop( -300 );
+
+
   $('body[data-action="typography"] a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top -14
