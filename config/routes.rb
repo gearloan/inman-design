@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   get 'design_explorations/list_article'
 
+  get 'design_explorations/article_2'
+
+
   root 'style_guide#index'
 
   get 'style_guide/index'

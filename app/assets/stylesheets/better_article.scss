@@ -1,4 +1,17 @@
-body[data-controller="design_explorations"][data-action="list_article"] {
+
+body[data-controller="design_explorations"][data-action="article_2"] {
+  .fake-inman-nav {
+
+    background:#000000 asset-url('new-nav.png')!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    height:706px!important;
+    * {
+      display: none;
+    }
+  }
+}
+body[data-controller="design_explorations"][data-action="list_article"], body[data-controller="design_explorations"][data-action="article_2"] {
   background:none!important;
   text-align: center;
 

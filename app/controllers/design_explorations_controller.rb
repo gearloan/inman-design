@@ -18,4 +18,7 @@ class DesignExplorationsController < ApplicationController
     render layout: 'fake-inman'
   end
 
+  def article_2
+    render layout: 'fake-inman'
+  end
 end

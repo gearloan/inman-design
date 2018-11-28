@@ -1,4 +1,4 @@
-body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="conf_guide"], body[data-controller="design_explorations"][data-action="list_article"] {
+body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="conf_guide"], body[data-controller="design_explorations"][data-action="list_article"], body[data-controller="design_explorations"][data-action="article_2"] {
   .below-guides {
     display: none;
   }
@@ -12,7 +12,7 @@ body[data-controller="design_explorations"][data-action="new_stories_menu"], bod
   background-position: center 160px;
   background-size: 1200px;;
 }
-body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="conf_guide"], body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="list_article"] {
+body[data-controller="design_explorations"][data-action="guides"], body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="conf_guide"], body[data-controller="design_explorations"][data-action="new_stories_menu"], body[data-controller="design_explorations"][data-action="list_article"], body[data-controller="design_explorations"][data-action="article_2"] {
 
   @keyframes slideSubNavDown {
     0%   { top: 0; }
