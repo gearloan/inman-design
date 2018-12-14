@@ -221,6 +221,14 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
             display: block;
           }
         }
+        .date {
+          background: #4679ac;
+          display: inline-block ;
+          color: #ffffff;
+          font-size: smaller;
+          padding: 14px 40px;
+          margin: 0px 0 28px 0;
+        }
         .drop {
           font-size: 40px;
 
@@ -253,17 +261,10 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           p {
             padding:0 30px 0 40px;
           }
-          .date {
-            background: #4679ac;
-            display: inline-block ;
-            color: #ffffff;
-            font-size: smaller;
-            padding: 14px 40px;
-            margin: 0px 0 28px 0;
-          }
+
         }
-        .first-drop, .third-drop {
-          p {
+        .drop {
+          > span > p {
             position: relative;
             @media(min-width:1024px) {
               padding: 0 40px 0 26px;
@@ -287,8 +288,11 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
           }
         }
         .second-drop {
-          padding-left: 0;
-          padding-right: 0;
+          //padding-left: 0;
+          //padding-right: 0;
+          p {
+            padding:0 30px 0 40px;
+          }
           ul.events-wrap {
             font-size: 36px;
             li {
@@ -301,6 +305,11 @@ body[data-controller="design_explorations"][data-action="guides"], body[data-con
                 padding-top:0;
                 .event-date {
                   top: 4px;
+                }
+              }
+              &.event-promo-spot {
+                p {
+                  font-size: 9px;
                 }
               }
               h5, h4, a {
