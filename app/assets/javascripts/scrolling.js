@@ -1,12 +1,12 @@
-$(document).ready(function () {
-    // Handler for .ready() called.
-    if ($("html").scrollTop() < $(".fake-inman-nav").innerHeight()) {
-      $('html, body').animate({
-          scrollTop: $('.inman-logo-bw').offset().top
-      }, 'slow');
-    }
-});
 $( document ).ready(function() {
+
+  if ($("html").scrollTop() < $(".fake-inman-nav").innerHeight()) {
+    $('html, body').animate({
+        scrollTop: $('.inman-logo-bw').offset().top
+    }, 'slow');
+  }
+
+
   //$( 'html, body' ).scrollTop( -300 );
 
 
@@ -23,7 +23,9 @@ $( document ).ready(function() {
     $("body").toggleClass('mobile-styles-active');
   }
   // on click toggle the class 'mobile' to body
-  $("#btn-toggle-mobile").onclick = function () {toggleMobile();};
+  $("#btn-toggle-mobile").click( function () {
+    toggleMobile();
+  });
 
 
 });
