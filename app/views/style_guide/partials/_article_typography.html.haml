@@ -6,15 +6,15 @@
       %li
         %span
           Family
-        Balto Book
+        Balto Bold
       %li
         %span
           Color
-        \#999999
+        \#0a7bb5
       %li
         %span
           Size
-        12px
+        18px
       %li
         %span
           Case
@@ -22,11 +22,11 @@
       %li
         %span
           Letter Spacing
-        1px
+        1.4px
     .sample
       %p.eyebrow
         =link_to 'TECHNOLOGY', '#', :class => "author-name"
-        %span.author-name | Today 8:12 A.M.
+        =#span.author-name
 
   %h3#primary-headline Primary Headline
   %section.specs
@@ -42,15 +42,15 @@
       %li
         %span
           Color
-        \#374145
+        \#000000
       %li
         %span
           Size
-        36px
+        55px
       %li
         %span
           line-height
-        1
+        1.1
     .sample
       %h2.regular-article-headline How federal tax reform will raise state income taxes
 
@@ -60,19 +60,19 @@
       %li
         %span
           Family
-        Balto
+        Harriet Display
       %li
         %span
           Weight
-        Book
+        Regular
       %li
         %span
           Color
-        \#444444
+        \#000000
       %li
         %span
           Size
-        20px
+        23px
       %li
         %span
           Line Height
@@ -91,7 +91,7 @@
       %li
         %span
           Color
-        \#999999
+        \#000000
       %li
         %span
           Size
@@ -113,6 +113,7 @@
         =link_to '@emmah', '#'
         |
         =link_to 'emmah@inman.com', '#'
+      %p.date April 5th, 2019
 
   %h3#sharing Sharing
   %section.specs
@@ -131,9 +132,36 @@
         18px
     .sample
       %p.sharing-top
-        =link_to 'Email, ', '#'
-        =link_to 'Save for later', '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/twitter.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/fb.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/linkedin.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/email.png'), '#'
 
+  %h3#image-caption Image Caption
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto
+      %li
+        %span
+          Weight
+        Book
+      %li
+        %span
+          Size
+        15px
+      %li
+        %span
+          Color
+        \#797878
+      %li
+        %span
+          Line-height
+        1.2
+    .sample
+      %p.image-caption I am a caption, use me wisely or not at all.
   %h3#image-credit Image Credit
   %section.specs
     %ul.specs-list.column-left
@@ -148,15 +176,20 @@
       %li
         %span
           Color
-        \#999999
+        \#000000
       %li
         %span
           Size
         12px
+      %li
+        %span
+          Letter-spacing
+        1.6px
     .sample
       %p.image-credit
         Illustration by
         =link_to 'Pedro Correa', '#', :class => "author-name"
+        %hr
 
   %h2 Interior
 
@@ -166,19 +199,19 @@
       %li
         %span
           Family
-        System Stack
+        Harriet Text
       %li
         %span
           Weight
-        book
+        Regular
       %li
         %span
           Color
-        \#555555
+        \#000000
       %li
         %span
           Size
-        14px
+        24px
 
     .sample
       %p.body-copy
