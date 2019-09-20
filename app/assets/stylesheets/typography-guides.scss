@@ -531,3 +531,11 @@ body[data-controller="style_guide"][data-action="service"] {
   }
 
 }
+body[data-controller="style_guide"][data-action="interview"] {
+  .sample {
+    background: #000000;
+  }
+  .regular-article-headline {
+    color: #ffffff;
+  }
+}
