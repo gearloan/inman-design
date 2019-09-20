@@ -1,106 +1,68 @@
 .section-wrap
   %h2 head
-  %h3#opinion-headline Opinion Headline
+  %h3#eyebrow Eyebrow
   %section.specs
     %ul.specs-list.column-left
       %li
         %span
           Family
-        Harriet Bold Italic
+        Balto Bold
       %li
         %span
           Color
-        \#544096
+        \#0a7bb5
       %li
         %span
           Size
-        36px
+        18px
       %li
         %span
-          line-height
-        1
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1.4px
     .sample
-      %h2.opinion-headline Should federal tax reform raise state income taxes?
+      %p.eyebrow
+        =link_to 'TECHNOLOGY', '#', :class => "author-name"
+        =#span.author-name
 
-  %h2 Interior
 
-  %h3#opinion-body-copy body copy
+  %h3#byline Byline
   %section.specs
     %ul.specs-list.column-left
       %li
         %span
           Family
-        Harriet Text Regular
+        Balto Book
       %li
         %span
           Color
-        \#544096
-      %li
-        %span
-          Link color
-        \#544096
-      %li
-        %span
-          Link decoration
-        underline
+        \#000000
       %li
         %span
           Size
-        16px
+        12px
+      %li
+        %span
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1px
 
     .sample
-      %p.opinion-body-copy
-        There’s an unpleasant surprise awaiting homeowners who plan to use the
-        =link_to("standard deduction","#")
-        rather than itemize on their federal income tax next year. They could easily find themselves paying more in state income taxes in 2018 than 2017 because of the tax reform act.
-      %p.opinion-body-copy
-        State and federal income taxes are closely tied. Some 41 states and the District of Columbia start the tax calculations by linking to a form of income in federal tax returns.
-
-  %h3#opinion-highlighted-text highlighted text
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Background
-        \#544096
-      %li
-        %span
-          Color
-        \#FFFFFF
-
-    .sample
-      %p.opinion-body-copy
-        Rosemont, Illinois-based VHT Studios, a 20-year-old provider of professional
-        %span.opinion-highlighted-text real estate photography, virtual staging and visual marketing services,
-        announced today its acquisition of Circlepix's real estate photography business, a deal that brings together the country's two...
-
-  %h3#opinion-pull-quote pull quote
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet Regular Italic
-      %li
-        %span
-          Color
-        \#544096
-      %li
-        %span
-          Size
-        24px
-      %li
-        %span
-          Width
-        280px
-      %li
-        %span
-          Line Height
-        1.2
-    .sample
-      %p.opinion-pull-quote A deal that brings together the country's two largest real estate photographer networks
-
-  %h3#opinion-numbered-lists numered lists
+      %p.byline
+        %span.author-name BY
+        =link_to 'Emma Hinchliffe', '#', :class => "author-name"
+        |
+        =link_to '@emmah', '#'
+        |
+        =link_to 'emmah@inman.com', '#'
+      %p.date April 5th, 2019
+  %h3#image-credit Image Credit
   %section.specs
     %ul.specs-list.column-left
       %li
@@ -110,53 +72,21 @@
       %li
         %span
           Weight
-        Bold
+        Book
       %li
         %span
           Color
-        \#ffffff
+        \#000000
       %li
         %span
           Size
-        20px
-
+        12px
+      %li
+        %span
+          Letter-spacing
+        1.6px
     .sample
-      %ol.opinion-numbered-list
-        %li
-          %span lorem ipsum
-        %li
-          %span poterum bloop
-        %li
-          %span lorem ipsum
-        %li
-          %span poterum bloop
-        %li
-          %span lorem ipsum
-
-  %h3#opinion-bulleted-lists bulleted lists
-  %section.specs
-    %ul.specs-list.column-left
-      %li
-        %span
-          Family
-        Harriet
-      %li
-        %span
-          Weight
-        Semibold
-      %li
-        %span
-          Color
-        \#333333
-      %li
-        %span
-          Size, large screen
-        30px
-
-    .sample
-      %ul.opinion-bullet-list
-        %li lorem ipsum
-        %li poterum bloop
-        %li lorem ipsum
-        %li poterum bloop
-        %li lorem ipsum
+      %p.image-credit
+        Illustration by
+        =link_to 'Pedro Correa', '#', :class => "author-name"
+        %hr

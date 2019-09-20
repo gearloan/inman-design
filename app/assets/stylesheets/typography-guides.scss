@@ -36,7 +36,7 @@ body[data-controller="style_guide"][data-action="opinion"] {
   }
   #btn-toggle-mobile .desktop { color: lighten(#4e438e, 30%);  }
 }
-body[data-controller="style_guide"][data-action="orange"] {
+body[data-controller="style_guide"][data-action="service"] {
   .swatch {
     background-color: lighten(#fc7906, 0%);
   }
@@ -50,7 +50,7 @@ body[data-controller="style_guide"][data-action="orange"] {
   }
   #btn-toggle-mobile .desktop { color: lighten(#fc7906, 30%);  }
 }
-body[data-controller="style_guide"][data-action="typography"],body[data-controller="style_guide"][data-action="interview"], body[data-controller="style_guide"][data-action="opinion"], body[data-controller="style_guide"][data-action="orange"] {
+body[data-controller="style_guide"][data-action="typography"],body[data-controller="style_guide"][data-action="interview"], body[data-controller="style_guide"][data-action="opinion"], body[data-controller="style_guide"][data-action="service"] {
     .page-title {
       text-transform: uppercase;
       color: #6d6d6d;

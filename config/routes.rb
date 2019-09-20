@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   get '/opinion-piece' => 'style_guide#opinion', as: 'opinion'
 
-  get '/service-post' => 'style_guide#orange', as: 'service'
+  get '/service-post' => 'style_guide#service', as: 'service'
 
   get '/interview' => 'style_guide#interview', as: 'interview'
 

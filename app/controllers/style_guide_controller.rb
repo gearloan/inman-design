@@ -8,7 +8,7 @@ class StyleGuideController < ApplicationController
   def opinion
   end
 
-  def orange
+  def service
   end
 
   def interview
