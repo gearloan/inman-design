@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   get '/service-post' => 'style_guide#orange', as: 'service'
 
+  get '/interview' => 'style_guide#interview', as: 'interview'
+
 
   get 'style_guide/colors'
 

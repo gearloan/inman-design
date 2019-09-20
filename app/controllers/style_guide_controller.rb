@@ -11,6 +11,9 @@ class StyleGuideController < ApplicationController
   def orange
   end
 
+  def interview
+  end
+
   def colors
   end
 end

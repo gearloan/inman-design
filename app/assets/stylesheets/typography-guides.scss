@@ -8,12 +8,26 @@ body[data-controller="style_guide"][data-action="typography"] {
   #btn-toggle-mobile .desktop { color:#349ec7; }
 
 }
+body[data-controller="style_guide"][data-action="interview"] {
+  .swatch {
+    //background-color: #4e438e;
+  }
+  h1 {
+    //color:lighten(#4e438e, 20%);
+  }
+  .toc-column {
+    a {
+      //color:lighten(#4e438e, 30%);
+    }
+  }
+//  #btn-toggle-mobile .desktop { color: lighten(#4e438e, 30%);  }
+}
 body[data-controller="style_guide"][data-action="opinion"] {
   .swatch {
     background-color: #4e438e;
   }
   h1 {
-    color:#4e438e;
+    color:lighten(#4e438e, 20%);
   }
   .toc-column {
     a {
@@ -24,7 +38,7 @@ body[data-controller="style_guide"][data-action="opinion"] {
 }
 body[data-controller="style_guide"][data-action="orange"] {
   .swatch {
-    background-color: #fc7906;
+    background-color: lighten(#fc7906, 0%);
   }
   h1 {
     color:#fc7906;
@@ -36,7 +50,7 @@ body[data-controller="style_guide"][data-action="orange"] {
   }
   #btn-toggle-mobile .desktop { color: lighten(#fc7906, 30%);  }
 }
-body[data-controller="style_guide"][data-action="typography"], body[data-controller="style_guide"][data-action="opinion"], body[data-controller="style_guide"][data-action="orange"] {
+body[data-controller="style_guide"][data-action="typography"],body[data-controller="style_guide"][data-action="interview"], body[data-controller="style_guide"][data-action="opinion"], body[data-controller="style_guide"][data-action="orange"] {
     .page-title {
       text-transform: uppercase;
       color: #6d6d6d;

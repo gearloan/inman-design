@@ -1,0 +1,391 @@
+.section-wrap
+  %h2 head
+  %h3#eyebrow Eyebrow
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto Bold
+      %li
+        %span
+          Color
+        \#0a7bb5
+      %li
+        %span
+          Size
+        18px
+      %li
+        %span
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1.4px
+    .sample
+      %p.eyebrow
+        =link_to 'TECHNOLOGY', '#', :class => "author-name"
+        =#span.author-name
+
+  %h3#primary-headline Primary Headline
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        bold
+      %li
+        %span
+          Color
+        \#000000
+      %li
+        %span
+          Size
+        55px
+      %li
+        %span
+          line-height
+        1.1
+    .sample
+      %h2.regular-article-headline How federal tax reform will raise state income taxes
+
+  %h3#dek Dek/Sub-headline
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet Display
+      %li
+        %span
+          Weight
+        Regular
+      %li
+        %span
+          Color
+        \#000000
+      %li
+        %span
+          Size
+        23px
+      %li
+        %span
+          Line Height
+        1.4
+
+    .sample
+      %p.dek Millions will choose the standard deduction over itemizing, but states have not raised their standard deductions
+
+  %h3#byline Byline
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto Book
+      %li
+        %span
+          Color
+        \#000000
+      %li
+        %span
+          Size
+        12px
+      %li
+        %span
+          Case
+        Uppercase
+      %li
+        %span
+          Letter Spacing
+        1px
+
+    .sample
+      %p.byline
+        %span.author-name BY
+        =link_to 'Emma Hinchliffe', '#', :class => "author-name"
+        |
+        =link_to '@emmah', '#'
+        |
+        =link_to 'emmah@inman.com', '#'
+      %p.date April 5th, 2019
+
+  %h3#sharing Sharing
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto
+      %li
+        %span
+          Weight
+        Bold
+      %li
+        %span
+          Size
+        18px
+    .sample
+      %p.sharing-top
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/twitter.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/fb.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/linkedin.png'), '#'
+        =link_to image_tag('https://coab-alchemy-attachments.s3.amazonaws.com/email.png'), '#'
+
+  %h3#image-caption Image Caption
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto
+      %li
+        %span
+          Weight
+        Book
+      %li
+        %span
+          Size
+        15px
+      %li
+        %span
+          Color
+        \#797878
+      %li
+        %span
+          Line-height
+        1.2
+    .sample
+      %p.image-caption I am a caption, use me wisely or not at all.
+  %h3#image-credit Image Credit
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto
+      %li
+        %span
+          Weight
+        Book
+      %li
+        %span
+          Color
+        \#000000
+      %li
+        %span
+          Size
+        12px
+      %li
+        %span
+          Letter-spacing
+        1.6px
+    .sample
+      %p.image-credit
+        Illustration by
+        =link_to 'Pedro Correa', '#', :class => "author-name"
+        %hr
+
+  %h2 Interior
+
+  %h3#body-copy body copy
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet Text
+      %li
+        %span
+          Weight
+        Regular
+      %li
+        %span
+          Color
+        \#000000
+      %li
+        %span
+          Size
+        24px
+
+    .sample
+      %p.body-copy
+        There’s an unpleasant surprise awaiting homeowners who plan to use the standard deduction rather than itemize on their federal income tax next year. They could easily find themselves paying more in state income taxes in 2018 than 2017 because of the tax reform act.
+      %p.body-copy
+        State and federal income taxes are closely tied. Some 41 states and the District of Columbia start the tax calculations by linking to a form of income in federal tax returns.
+
+  %h3#inline-links inline links
+  %section.specs#inline-links
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        Semibold
+      %li
+        %span
+          Color
+        \#2d92d0
+      %li
+        %span
+          On Hover
+        Underline
+      %li
+        %span
+          Visited
+        \#2f719a
+
+    .sample
+      %p.body-copy
+        There’s an
+        =link_to "unpleasant surprise", "#", :class => "inline-link"
+        awaiting homeowners who plan to use the
+        =link_to "standard deduction", "#", :class => "inline-link"
+        rather than itemize on their
+        =link_to "federal income tax", "#", :class => "inline-link"
+        next year. They could easily find themselves paying more in
+        =link_to "state income taxes", "#", :class => "inline-link"
+        in 2018 than 2017 because of the
+        =link_to "tax reform act.", "#", :class => "inline-link"
+
+  %h3#highlighted-text highlighted text
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Background
+        \#5cb2e1
+      %li
+        %span
+          Color
+        \#FFFFFF
+
+    .sample
+      %p.body-copy
+        Rosemont, Illinois-based VHT Studios, a 20-year-old provider of professional
+        %span.highlighted-text real estate photography, virtual staging and visual marketing services,
+        announced today its acquisition of Circlepix's real estate photography business, a deal that brings together the country's two...
+  %h3#block-quote block quote
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Padding
+        0 2rem
+      %li
+        %span
+          Weight
+        Semibold
+      %li
+        %span
+          Color
+        \#333333
+      %li
+        %span
+          Size, large screen
+        30px
+
+    .sample
+      %p.body-copy Rosemont, Illinois-based VHT Studios, a 20-year-old provider of professional real estate photography, virtual staging and visual marketing services, announced today its acquisition of Circlepix's real estate photography business, a deal that brings together the country's two largest real estate photographer networks in North America.
+      %p.block-quote The Circlepix photography business acquisition, which does not include its PIXmarketing and PIXsocial divisions, is the second photography business acquisition in the past two years for VHT Studios, after it snatched up New York’s Gotham Photo Company in 2015.
+      %p.body-copy Around 300 Circlepix photographers around the country will join VHT Studios, raising the company's photographer count to approximately 900, and VHT Studios will inherit roughly 13,000 new clients in the deal, VHT Studios CEO Brian Balduf told Inman. Terms of the deal were not disclosed.
+
+
+  %h3#pull-quote pull quote
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        Regular
+      %li
+        %span
+          Color
+        \#00aae8
+      %li
+        %span
+          Size
+        24px
+      %li
+        %span
+          Width
+        280px
+      %li
+        %span
+          Line Height
+        1.2
+    .sample
+      %p.pull-quote A deal that brings together the country's two largest real estate photographer networks
+
+  %h3#numbered-lists numered lists
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Balto
+      %li
+        %span
+          Weight
+        Bold
+      %li
+        %span
+          Color
+        \#ffffff
+      %li
+        %span
+          Size
+        20px
+
+    .sample
+      %ol.numbered-list
+        %li
+          %span lorem ipsum
+        %li
+          %span poterum bloop
+        %li
+          %span lorem ipsum
+        %li
+          %span poterum bloop
+        %li
+          %span lorem ipsum
+
+  %h3#bulleted-lists bulleted lists
+  %section.specs
+    %ul.specs-list.column-left
+      %li
+        %span
+          Family
+        Harriet
+      %li
+        %span
+          Weight
+        Semibold
+      %li
+        %span
+          Color
+        \#333333
+      %li
+        %span
+          Size, large screen
+        30px
+
+    .sample
+      %ul.bullet-list
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
+        %li poterum bloop
+        %li lorem ipsum
