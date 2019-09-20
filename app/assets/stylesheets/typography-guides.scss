@@ -107,31 +107,19 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
       }
     }
     .rr-header {
-      font-size: 30px;
-      color: #010101;
-      width: 290px;
-      font-family: "harrietBold";
-      border-bottom: 3px solid #5cb2e1;
+      font-family: "baltoBold";
+      color: #000000;
+      font-size: 18px;
+      border-bottom: 1px solid #cccccc;
+      width:240px;
     }
     .rr-headline {
-      font-family: "harrietRegular";
-      font-size: 22px;
+      font-family: "baltoBook";
       color: #000000;
+      font-size: 13px;
+      line-height: 1.2;
     }
-    .byline {
-      font-family: "harrietRegular";
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 0;
-      color: #000;
-      &.rr-byline {
-        font-size: 10px;
-      }
-      .author-name {
-        text-transform: uppercase;
-        letter-spacing: 1.4px;
-      }
-    }
+
     .date {
       font-family: "harrietRegular";
       font-size: 14px;
@@ -150,11 +138,17 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
     line-height: 1;
     color:#374145;
   }
-  .eyebrow, .byline {
-    font-family: "BaltoBold";
-    color:#999;
-    font-size: 18px;
+  .byline {
+    font-family: "HarrietRegular";
+    color:#000000;
+    font-size: 14px;
     letter-spacing: 1.4px;
+  }
+  .eyebrow {
+    font-family: "BaltoBold";
+    color:#000000;
+    font-size: 18px;
+    letter-spacing: 1.2px;
   }
   .image-caption {
     font-family: "BaltoBook";
@@ -314,19 +308,18 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
       color:#2f719a;
     }
   }
+  .recirc-related-header {
+    background:#e4f3fc;
+    font-family: "BaltoBold";
+    font-size:30px;
+  }
   .recirc-related-headline {
-    background:#14364b;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
+    font-family: "HarrietRegular";
+    color: #181717;
+    font-size: 18px;
     max-width: 300px;
   }
-  .recirc-related-blurb {
-    background:#0b1e2a;
-    color: #ffffff;
-    font-size: 13px;
-    max-width: 300px;
-  }
+
   .recirc-category-headline {
     font-family: "hli";
     color: #ffffff;
@@ -536,4 +529,5 @@ body[data-controller="style_guide"][data-action="service"] {
     font-size:23px;
     line-height: 2;
   }
+
 }
