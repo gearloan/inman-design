@@ -13,6 +13,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'baltoMedium';
+  src: font-url('bm.otf'); /* IE9 Compat Modes */
+  src: local("☺"),
+    font-url("bm.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
   font-family: 'harrietbold';
   src: font-url('hb.otf'); /* IE9 Compat Modes */
   src: local("☺"),
