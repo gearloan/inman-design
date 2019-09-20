@@ -16,9 +16,9 @@ Rails.application.routes.draw do
 
   get 'style_guide/index'
 
-  get '/article-post' => 'style_guide#typography', as: 'article'
+  get '/standard-article' => 'style_guide#typography', as: 'article'
 
-  get '/opinion-post' => 'style_guide#opinion', as: 'opinion'
+  get '/opinion-piece' => 'style_guide#opinion', as: 'opinion'
 
   get '/service-post' => 'style_guide#orange', as: 'service'
 
