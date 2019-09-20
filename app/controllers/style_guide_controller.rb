@@ -5,6 +5,12 @@ class StyleGuideController < ApplicationController
   def typography
   end
 
+  def opinion
+  end
+
+  def orange
+  end
+
   def colors
   end
 end

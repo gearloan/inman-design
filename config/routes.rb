@@ -18,6 +18,10 @@ Rails.application.routes.draw do
 
   get 'style_guide/typography'
 
+  get 'style_guide/opinion'
+
+  get 'style_guide/orange'
+
   get 'style_guide/colors'
 
   get 'style_guide/imagery'
