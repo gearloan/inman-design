@@ -17,7 +17,6 @@ body {
 a {
   color:#2d92d0;
   text-decoration: none;
-
 }
 p {
   margin: 0 0 1em 0;
@@ -32,4 +31,13 @@ p {
   right: 45px;
   top:45px;
   margin-bottom: .5rem;
+}
+
+body[data-controller="style_guide"][data-action="index"] {
+  .opinion-link {
+    color:lighten(#4e438e, 20%);
+  }
+  .service-link {
+    color:lighten(#fc7906, 20%);
+  }
 }
