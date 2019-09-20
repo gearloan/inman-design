@@ -16,11 +16,12 @@ Rails.application.routes.draw do
 
   get 'style_guide/index'
 
-  get 'style_guide/typography'
+  get '/article-post' => 'style_guide#typography', as: 'article'
 
-  get 'style_guide/opinion'
+  get '/opinion-post' => 'style_guide#opinion', as: 'opinion'
 
-  get 'style_guide/orange'
+  get '/service-post' => 'style_guide#orange', as: 'service'
+
 
   get 'style_guide/colors'
 
