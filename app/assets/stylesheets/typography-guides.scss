@@ -532,10 +532,68 @@ body[data-controller="style_guide"][data-action="service"] {
 
 }
 body[data-controller="style_guide"][data-action="interview"] {
+  .swatch {
+    background-color: #5aaeda;
+  }
+  .byline, section.specs .sample .date {
+    color:#FFFFFF;
+    font-family: "harrietRegular-italic";
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    a {
+      color:inherit;
+    }
+  }
+
   .sample {
     background: #000000;
   }
   .regular-article-headline {
     color: #ffffff;
+    font-size: 60px;
+    position: relative;
+    line-height: 1;
+    margin-left: 20px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 149px;
+      background: #5aaeda;
+      position: absolute;
+      left: -20px;
+      top: 25px;
+    }
+  }
+  .dek {
+    font-family: "BaltoMedium";
+    color: #5aaeda;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2.4px;
+  }
+  section.specs:last-of-type {
+      .sample {
+        background: #ffffff;
+        .block-quote {
+          font-family: "harrietBold";
+          font-size: 24px;
+          position: relative;
+          line-height: 1.2;
+          padding: 0 1.2rem;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 52px;
+            background: #5aaeda;
+            position: absolute;
+            left: 0px;
+            top: 2px;
+        }
+      }
+    }
   }
 }
