@@ -1,6 +1,30 @@
 body[data-controller="style_guide"][data-action="index"] {
-  padding: 60px;
+  padding: 120px 60px;
   h3 {
-    padding-left: 1em; 
+    padding-left: 1em;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    background:#272727;
+    color: #858585;
+    padding:12px 12px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 1.5rem
+  }
+  .content {
+    max-width: 840px;
+    margin: auto;
+    > section {
+      display: flex;
+      justify-content: space-between;
+      section {
+        min-width: 240px;
+        margin-bottom: 3rem;
+      }
+
+    }
   }
 }

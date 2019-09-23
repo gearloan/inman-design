@@ -16,4 +16,14 @@ class StyleGuideController < ApplicationController
 
   def colors
   end
+
+  def rr_base
+  end
+
+  def rr_email_signup
+  end
+
+  def recirc_default
+  end
+
 end

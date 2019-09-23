@@ -2,45 +2,38 @@
 
 %h1 Typography Guide
 %br
+%section
+  %section.article-types
+    %h2 Article Types
+    %h3
+      =link_to 'Standard Article', article_path
+    %h3
+      =link_to 'Opinion Piece', opinion_path, :class => 'opinion-link'
+    %h3
+      =link_to 'Service Post', service_path, :class => 'service-link'
+    %h3
+      =link_to 'Interview', interview_path
 
-%h3
-  =link_to 'Standard Article', article_path
-%br
-%h3
-  =link_to 'Opinion Piece', opinion_path, :class => 'opinion-link'
-%br
-%h3
-  =link_to 'Service Post', service_path, :class => 'service-link'
-%br
-%h3
-  =link_to 'Interview', interview_path
-%br
--#
-  %h3
-    =link_to 'Brand Story', style_guide_story_path
-  %br
-  %h3
-    =link_to 'Logo', style_guide_logo_path
-  %br
+  %section.rr-modules
+    %h2 Right Rail Modules
+    %h3
+      =link_to 'Base Module', rr_base_path
+    %h3
+      =link_to 'Email Sign Up', rr_email_signup_path
+  %section.recirculation
+    %h2 Article Recirculation
+    %h3
+      =link_to 'Default Recirculation', recirc_default_path
 
-  %h3
-    =link_to 'Color Palette', style_guide_colors_path
-  %br
-  %h3
-    =link_to 'Imagery and Graphics', style_guide_imagery_path
-  %br
-  %h3
-    =link_to 'Voice', style_guide_voice_path
-  %br
+%h2 Charts & Graphs
+
 %h2 Design Explorations(2018)
-%br
 
 %h3
   =link_to "Article Recirculation", "#";
-%br
 
 %h3
   =link_to "Guides UX", design_explorations_guides_path;
-%br
+
 %h3
   =link_to "Unread items menu", design_explorations_new_stories_menu_path;
