@@ -184,11 +184,11 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
   .body-copy {
     font-family:"HarrietRegular";
     font-size: 24px;
-    color: #555;
+    color: #000;
   }
   .opinion-body-copy {
     font-family:"hr";
-    color: #555;
+    color: #000;
     font-size: 16px;
     a {
       color:#544096;
@@ -216,22 +216,15 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
     padding:0 2rem;
   }
   .pull-quote {
-    font-family: "harrietRegular";
-    font-size: 24px;
+    font-family: "BaltoBold";
+    font-size: 36px;
     width:280px;
     color: #00aae8;
     line-height: 1.2;
   }
-  .opinion-pull-quote {
-    font-family: "baltoBold";
-    font-size: 24px;
-    width:280px;
-    color: #544096;
-    line-height: 1.2;
-  }
   .opinion-bullet-list {
-    color: #555;
     li {
+      color: #000;
       &:before {
         content: "•";
         color: #544096;
@@ -240,12 +233,16 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
     }
   }
   .bullet-list {
-    color: #555;
+    color: #000;
     li {
+      font-family: "BaltoBold";
       &:before {
         content: "•";
         color: #00aae8;
         padding: 0 8px 0 0;
+        font-size: 3em;
+        line-height: 1;
+        vertical-align: middle;
       }
     }
   }
@@ -254,7 +251,7 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
       counter-increment: section;
       margin-bottom: 10px;
       text-transform: capitalize;
-      color: #555;
+      color: #000;
       &:before {
         content: counters(section,"");
         display: inline-block;
@@ -275,7 +272,9 @@ body[data-controller="style_guide"][data-action="typography"],body[data-controll
       counter-increment: section;
       margin-bottom: 10px;
       text-transform: capitalize;
-      color: #555;
+      color: #000000;
+      font-family: "BaltoBold";
+      font-size: 18px;
       &:before {
         content: counters(section,"");
         display: inline-block;
@@ -504,6 +503,19 @@ body[data-controller="style_guide"][data-action="opinion"] {
   }
   #btn-toggle-mobile .desktop { color: lighten(#4e438e, 30%);  }
   .eyebrow a, .byline a, .image-credit a { color:#4e438e; }
+
+  .highlighted-text {
+    background: #4e438e;
+  }
+  .pull-quote {
+    color: #4e438e;
+  }
+  .numbered-list li:before {
+    background: #4e438e;
+  }
+  .bullet-list li:before {
+    color: #4e438e;
+  }
 }
 body[data-controller="style_guide"][data-action="service"] {
   .swatch {
@@ -528,6 +540,18 @@ body[data-controller="style_guide"][data-action="service"] {
     font-family: "BaltoMedium";
     font-size:23px;
     line-height: 2;
+  }
+  .highlighted-text {
+    background: #fc7906;
+  }
+  .pull-quote {
+    color: #fc7906;
+  }
+  .numbered-list li:before {
+    background: #fc7906;
+  }
+  .bullet-list li:before {
+    color: #fc7906;
   }
 
 }

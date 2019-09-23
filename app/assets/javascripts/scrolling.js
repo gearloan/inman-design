@@ -10,7 +10,7 @@ $( document ).ready(function() {
   //$( 'html, body' ).scrollTop( -300 );
 
 
-  $('body[data-action="typography"] a').click(function(){
+  $('body[data-controller="style_guide"] a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top -14
     }, 300);
