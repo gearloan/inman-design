@@ -1,23 +1,32 @@
 body[data-controller="style_guide"][data-action="index"] {
   padding: 120px 60px;
-  h3 {
-    padding-left: 1em;
-    margin-bottom: 1rem;
-  }
-  h2 {
-    background:#272727;
-    color: #858585;
-    padding:12px 12px;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-  }
-  h1 {
-    font-size: 1.5rem
-  }
-  .content {
+
+  .main-column {
     max-width: 840px;
     margin: auto;
-    > section {
+    h3 {
+      padding-left: 1em;
+      margin-bottom: 1rem;
+      letter-spacing: initial;
+      font-size: initial;
+      text-transform: initial;
+      font-weight: initial;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 1px;
+      background:#272727;
+      color: #858585;
+      padding:12px 12px;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 1.5rem
+    }
+    > div {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;

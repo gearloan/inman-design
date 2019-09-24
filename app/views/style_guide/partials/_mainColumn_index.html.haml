@@ -1,13 +1,8 @@
-=render 'style_guide/partials/toc_index'
-
-=render 'style_guide/partials/mainColumn_index'
-
-=image_tag "inman-design-logo.png", :width => '120', :class => 'design-logo-main'
-
--#
+// SERVICES
+%section.main-column
   %h1 Typography Guide
   %br
-  %section
+  %div
     %section.article-types
       %h2 Article Types
       %h3
@@ -31,15 +26,3 @@
         =link_to 'Default Recirculation', recirc_default_path
 
   %h2 Charts & Graphs
-
--#
-  %h2 Design Explorations(2018)
-
-  %h3
-    =link_to "Article Recirculation", "#";
-
-  %h3
-    =link_to "Guides UX", design_explorations_guides_path;
-
-  %h3
-    =link_to "Unread items menu", design_explorations_new_stories_menu_path;
