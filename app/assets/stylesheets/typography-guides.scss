@@ -19,6 +19,7 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
         margin-left: 230px;
       }
       &.toc-column {
+        font-family: "BaltoMedium";
         position: fixed;
         left: 0;
         top: 0;
@@ -44,10 +45,11 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
           li {
             color:#777;
             ul.type-group {
-              padding: 0 0 0 8px;
+              padding: 0 0 .5rem 8px;
               li {
                 color:#aaa;
-                font-size: 12px;
+                font-size: 13px;
+                padding:1px 0 ;
               }
             }
           }
@@ -57,7 +59,7 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
   }
 
   h1 {
-    font-weight: bold;
+    font-family: "BaltoBold";
     margin: .5em 0 .25rem 0;
   }
 
@@ -67,8 +69,11 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
     text-transform: capitalize;
     opacity: .7;
   }
-
+  h2 {
+    font-family: "BaltoBook";
+  }
   h3 {
+    font-family: "BaltoMedium";
     margin-bottom: .25rem;
     font-size:10px;
     font-weight: bold;
@@ -102,8 +107,9 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
       background:#444;
       padding:15px;
       color:#888;
+      font-family: "baltoBook";
       span {
-        font-weight: bold;
+        font-family: "baltoBold";
       }
     }
     .rr-header {
