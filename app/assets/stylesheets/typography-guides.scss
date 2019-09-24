@@ -89,6 +89,7 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
     padding:15px;
     color:#222;
     width: 100%;
+    min-width: 640px;
     transition: all .4s linear;
   }
 
@@ -450,7 +451,7 @@ body[data-controller="style_guide"][data-action="index"], body[data-controller="
   //// mobile styles
   // body {
   &.mobile-styles-active {
-    .sample { width: 320px;}
+    .sample { min-width: 320px;width: 320px;}
     .eyebrow {}
     .primary-headline {}
     .dek {}
@@ -637,5 +638,32 @@ body[data-controller="style_guide"][data-action="interview"] {
         }
       }
     }
+  }
+}
+body[data-controller="style_guide"][data-action="rr_email_signup"] {
+  .signup-header p {
+    font-family: "BaltoBold";
+    color:#333132;
+    font-size: 18px;
+    width:182px;
+    line-height: 1;
+  }
+  .signup-blurb p {
+    font-family: "BaltoBook";
+    font-size: 12px;
+    color:#333132;
+    width:182px;
+    line-height: 1;
+  }
+  .signup-button p {
+    font-family: "BaltoBook";
+    color:#FFFFFF;
+    font-size: 18px;
+    background:#db3833;
+    border-radius: 10px;
+    width:182px;
+    text-align: center;
+    padding: 6px;
+    text-transform: capitalize;
   }
 }

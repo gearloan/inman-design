@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   get '/interview' => 'style_guide#interview', as: 'interview'
 
-  get '/right-rail-base-module' => 'style_guide#rr_base', as: 'rr_base'
+  get '/right-rail-headline-list' => 'style_guide#rr_base', as: 'rr_base'
 
   get '/right-rail-email-signup' => 'style_guide#rr_email_signup', as: 'rr_email_signup'
 
