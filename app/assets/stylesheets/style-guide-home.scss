@@ -1,9 +1,12 @@
 body[data-controller="style_guide"][data-action="index"] {
   padding: 120px 60px;
-
+  .back-btn {
+    text-indent: -3000rem;
+  }
   .main-column {
     max-width: 840px;
     margin: auto;
+
     h3 {
       padding-left: 1em;
       margin-bottom: 1rem;
