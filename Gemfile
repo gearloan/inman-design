@@ -54,7 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml-rails", "~> 1.0"
 
-ruby "2.4.1"
+ruby "2.6.1"
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
