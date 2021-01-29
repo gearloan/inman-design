@@ -3,10 +3,11 @@ body[data-controller="style_guide"][data-action="index"] {
   .back-btn {
     text-indent: -3000rem;
   }
-  .main-column {
+//  #btn-toggle-mobile{display: none;}
+  #maincol {
     //max-width: 840px;
-    //margin: auto;
-
+    margin: auto;
+    margin-left: auto;
     h3 {
       padding-left: 1em;
       margin-bottom: 1rem;
